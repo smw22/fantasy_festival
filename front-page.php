@@ -12,6 +12,53 @@
                 </div>
             </div>
 
+            <h1 class="information-title">Information</h1>
+            <div class="information-section">
+
+                <div class="information-section-item">
+                    <div class="information-section-item-icon">
+
+                    </div>
+                    <p class="information-section-item-title"></p>
+                </div>
+
+                <div class="information-section-item">
+                    <div class="information-section-item-icon">
+
+                    </div>
+                    <p class="information-section-item-title"></p>
+                </div>
+
+                <div class="information-section-item">
+                    <div class="information-section-item-icon">
+
+                    </div>
+                    <p class="information-section-item-title"></p>
+                </div>
+
+                <div class="information-section-item">
+                    <div class="information-section-item-icon">
+
+                    </div>
+                    <p class="information-section-item-title"></p>
+                </div>
+
+                <div class="information-section-item">
+                    <div class="information-section-item-icon">
+
+                    </div>
+                    <p class="information-section-item-title"></p>
+                </div>
+
+                <div class="information-section-item">
+                    <div class="information-section-item-icon">
+
+                    </div>
+                    <p class="information-section-item-title"></p>
+                </div>
+
+            </div>
+
         <?php endwhile; ?>
     <?php endif; ?>
 <?php get_footer() ?>

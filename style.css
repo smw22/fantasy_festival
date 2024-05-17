@@ -88,6 +88,7 @@ span{
     font-size: 2.5rem;
     transition: all 0.3s ease;
     color: var(--light-color);
+    z-index: 99;
 }
 
 .off-screen-menu ul{
@@ -127,6 +128,7 @@ span{
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    margin-bottom: 100px;
 }
 
 .title-box{
@@ -166,10 +168,11 @@ span{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--dark-color);
-    margin-top: 100px;
+    flex-wrap: wrap;
+    background-color: black;
+    /* margin-top: 100px; */
+    padding-bottom: 15px;
     width: 100%;
-    height: 250px;
     gap: 20px;
 }
 
@@ -182,17 +185,21 @@ span{
     gap: 10px;
 }
 
-.footer-section:nth-child(1){
+.footer-section:first-of-type{
     align-items: center;
     justify-content: center;
     padding-top: 0;
-    border: 0;
+    border-left: none;
 }
 
 .footer-section-links{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.footer-section-title{
+    color: var(--light-color);
 }
 
 .phone-number{
@@ -218,4 +225,72 @@ span{
 .link a {
     color: var(--light-color);
     text-decoration: none;
+}
+
+.footer-ilustration{
+    position: absolute;
+    width: 100%;
+    transform: translateY(-33%);
+    right: 0;
+    z-index: -1;
+}
+
+.footer-ilustration-image{
+    width: 100%;
+}
+
+.footer-ilustration-image-responsive{
+    display: none;
+}
+
+/* media query 1000px */
+
+@media only screen and (max-width: 1000px){
+    /* .footer-container{
+        flex-direction: column;
+        align-items: start;
+    } */
+    .footer-container{
+        padding-bottom: 100px;
+    }
+    .footer-section{
+        /* flex-direction: row; */
+        height: 100px;
+        width: 40%;
+        padding: 10px 10px 0 10px;
+        /* border-left: 0;
+        border-bottom: solid 2px var(--light-color); */
+    }
+    .footer-section-title{
+        font-size: 16px;
+    }
+    .link{
+        font-size: 12px;
+    }
+    .footer-icon{
+        height: 15px;
+        width: 15px;
+    }
+    .footer-ilustration-image{
+        display: none;
+    }
+    
+    .footer-ilustration-image-responsive{
+        display: block;
+        width: 100%;
+    }
+}
+
+/* phone version */
+
+@media only screen and (max-width: 768px){
+    /* header */
+    .off-screen-menu{
+        width: 100%;
+        max-width: 100%;
+        right: -100%;
+    }
+    .footer-container{
+        padding-bottom: 15px;
+    }
 }
