@@ -6,3 +6,12 @@ function fantasy_festival_load_styles_and_scripts() {
     wp_enqueue_script("script", get_template_directory_uri() . "/script.js", array('animejs_library'), false, true);
 }
 add_action("wp_enqueue_scripts", "fantasy_festival_load_styles_and_scripts");
+
+function fantasy_festival_add_defer_attribute($tag, $handle, $src) {
+    // Add defer attribute to the script with handle 'script'
+    if ($handle === 'script') {
+        return '<script src="' . esc_url($src) . '" defer></script>';
+    }
+    return $tag;
+}
+add_filter('script_loader_tag', 'fantasy_festival_add_defer_attribute', 10, 3);

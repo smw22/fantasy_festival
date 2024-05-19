@@ -173,7 +173,17 @@ span{
     background-color: var(--dark-color);
     padding: 20px;
     opacity: 0.9;
-    color: var(--light-color)
+    color: var(--light-color);
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.8s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 .information-text-box.even{

@@ -7,10 +7,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-anime({
-    targets: '.title-box',
-    translateX: 250,
-    rotateZ: 360,
-    duration: 3000,
-    loop: true,
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    });
 });
+
+const hiddenElements = document.querySelectorAll(".information-text-box");
+hiddenElements.forEach((el) => observer.observe(el));
