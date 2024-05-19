@@ -120,6 +120,24 @@ span{
     padding: 15px;
     width: 100px;
 }
+
+.information-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 15px;
+}
+
+.information-section-item{
+    background-color: var(--orange-color);
+    width: 150px;
+    height: 100px;
+}
+
+.homepage-icon{
+    color: #000;
+}
 /*Quest Page */
 
 .container{

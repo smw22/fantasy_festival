@@ -6,3 +6,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         offScreenMenu.classList.toggle('active');
     });
 });
+
+anime({
+    targets: '.title-box',
+    translateX: 250,
+    rotateZ: 360,
+    duration: 3000,
+    loop: true,
+});

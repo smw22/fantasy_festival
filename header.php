@@ -24,7 +24,7 @@
         </nav>
         <div class="off-screen-menu">
                 <ul>
-                    <li>First menu</li>
+                    <li><a href="https://fantasyfestival.dk/">Fantasy Festival</a></li>
                     <li>Second</li>
                     <li>Third</li>
                 </ul>
