@@ -4,11 +4,11 @@
             
             <div class="home-container">
                 <div class="quest-buttons">
-                    <a href="<?php echo get_permalink(get_page_by_path("quest")) ?>">DAG</a>
+                    <a class="information-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">DAG</a>
                 </div>
 
                 <div class="quest-buttons">
-                    <a href="<?php echo get_permalink(get_page_by_path("quest")) ?>">AFTEN</a>
+                    <a class="information-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">AFTEN</a>
                 </div>
             </div>
 
@@ -17,20 +17,22 @@
 
                 <div class="information-section-row">
 
-                    <div class="information-section-item">
+                    <a class="information-link" href="<?php echo get_permalink(get_page_by_path("information")) ?>"><div class="information-section-item">
                         <div class="information-section-item-icon">
                             <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M512 64a448 448 0 1 1 0 896.064A448 448 0 0 1 512 64m67.2 275.072c33.28 0 60.288-23.104 60.288-57.344s-27.072-57.344-60.288-57.344c-33.28 0-60.16 23.104-60.16 57.344s26.88 57.344 60.16 57.344M590.912 699.2c0-6.848 2.368-24.64 1.024-34.752l-52.608 60.544c-10.88 11.456-24.512 19.392-30.912 17.28a12.99 12.99 0 0 1-8.256-14.72l87.68-276.992c7.168-35.136-12.544-67.2-54.336-71.296c-44.096 0-108.992 44.736-148.48 101.504c0 6.784-1.28 23.68.064 33.792l52.544-60.608c10.88-11.328 23.552-19.328 29.952-17.152a12.8 12.8 0 0 1 7.808 16.128L388.48 728.576c-10.048 32.256 8.96 63.872 55.04 71.04c67.84 0 107.904-43.648 147.456-100.416z"/></svg>
 
                         </div>
                         <p class="information-section-item-title">Praktisk information</p>
                     </div>
+                    </a>
 
-                    <div class="information-section-item">
+                    <a href="#home" class="information-link"><div class="information-section-item">
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.8 5.2C13 5 12.2 5 11.4 5l3.2-2.7l1.4 4c-.7-.5-1.4-.8-2.2-1.1M7 7.1c.6-.6 1.3-1.1 2-1.4l-4.1-.8l.7 4.1c.4-.7.8-1.4 1.4-1.9m-1.8 6.7C5 13 5 12.2 5 11.4l-2.7 3.2l4 1.4c-.5-.6-.9-1.4-1.1-2.2M22 19v2H3l5.4-5.5c-1.9-2-1.9-5.1 0-7.1c1.9-1.9 5.1-1.9 7 0l3-3l1.4 1.4L7.7 19zM9.8 14.1L14 9.8c-1.2-1.1-3-1.1-4.2 0c-1.1 1.2-1.1 3.1 0 4.3"/></svg>
                         </div>
                         <p class="information-section-item-title">Dag og aften Quests</p>
                     </div>
+                    </a>
 
                     <div class="information-section-item">
                         <div class="information-section-item-icon">
@@ -43,12 +45,13 @@
 
                 <div class="information-section-row">
 
-                    <div class="information-section-item">
+                    <a class="information-link" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><div class="information-section-item">
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M29 14a1 1 0 0 0 1-1V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a1 1 0 0 0 1 1a2 2 0 0 1 0 4a1 1 0 0 0-1 1v5a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1a2 2 0 0 1 0-4m-1 5.87V24h-7v-3h-2v3H4v-4.13a4 4 0 0 0 0-7.74V8h15v3h2V8h7v4.13a4 4 0 0 0 0 7.74"/><path fill="currentColor" d="M19 13h2v6h-2z"/></svg>
                         </div>
                         <p class="information-section-item-title">Køb biletter</p>
                     </div>
+                    </a>
 
                     <div class="information-section-item">
                         <div class="information-section-item-icon">
@@ -57,22 +60,23 @@
                         <p class="information-section-item-title">Kontakt os</p>
                     </div>
 
-                    <div class="information-section-item">
+                    <a class="information-link" href="<?php echo get_template_directory_uri(); ?>/img/program.png" download><div class="information-section-item">
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
                         </div>
                         <p class="information-section-item-title">Download programoversigt</p>
                     </div>
+                    </a>
                 </div>
 
             </div>
 
 
-            <h1 class="information-title">PROGRAM</h1>
+            <h1 class="information-title">PROGRAM </h1>
             <div class="program-image-box">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/program.png" alt="" class="program-image">
             </div>
 
         <?php endwhile; ?>
     <?php endif; ?>
-<?php get_footer() ?>
+<?php get_footer() ?>    

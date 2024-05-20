@@ -19,6 +19,10 @@ Author: Sergio Moron Westergaard
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -162,6 +166,11 @@ span{
     text-align: center;
 }
 
+.information-link{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
 .homepage-icon{
     color: #000;
     width: 60px;
@@ -203,7 +212,7 @@ span{
 .information{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 300px;
     width: 90%;
 }
 
@@ -268,6 +277,12 @@ span{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.footer-icon{
+    color: var(--light-color);
+    height: 30px;
+    width: 30px;
 }
 
 .footer-section-title{

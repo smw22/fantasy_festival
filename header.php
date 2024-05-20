@@ -6,7 +6,7 @@
     <?php wp_head() ?>
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="logo">
                 <a href="<?php echo get_permalink(get_page_by_path("frontpage")) ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/drage.jpg" alt="" class="logo-image"></a>
@@ -24,9 +24,9 @@
         </nav>
         <div class="off-screen-menu">
                 <ul>
-                    <li><a href="https://fantasyfestival.dk/">Fantasy Festival</a></li>
-                    <li>Second</li>
-                    <li>Third</li>
+                    <li class="link"><a href="https://fantasyfestival.dk/">Fantasy Festival</a></li>
+                    <li class="link">Second</li>
+                    <li class="link">Third</li>
                 </ul>
             </div>
     </header>
