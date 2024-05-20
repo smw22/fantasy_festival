@@ -1,3 +1,4 @@
+//header ham-menu transition
 document.addEventListener('DOMContentLoaded', (event) => {
     const offScreenMenu = document.querySelector('.off-screen-menu');
     const hamMenu = document.querySelector('.ham-menu');
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+//scroll animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {

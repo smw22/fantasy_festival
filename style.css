@@ -106,6 +106,8 @@ span{
 
 /* Header */
 
+
+
 /* Home Page */
 .home-container{
     display: flex;
@@ -138,6 +140,10 @@ span{
 .homepage-icon{
     color: #000;
 }
+
+
+
+
 /*Quest Page */
 
 .container{
@@ -189,6 +195,10 @@ span{
 .information-text-box.even{
     align-self: flex-end;
 }
+
+
+
+
 
 /* footer */
 
