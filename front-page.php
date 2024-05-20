@@ -12,108 +12,65 @@
                 </div>
             </div>
 
-            <h1 class="information-title">Information</h1>
+            <h1 class="information-title">INFORMATION</h1>
             <div class="information-section">
 
-                <div class="information-section-item">
-                    <div class="information-section-item-icon">
-                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="106" viewBox="0 0 126 106">
-                        <defs>
-                            <clipPath id="clip-path">
-                            <rect id="Rectangle_74" data-name="Rectangle 74" width="126" height="106" transform="translate(397 2250)" fill="#fff" stroke="#707070" stroke-width="1"/>
-                            </clipPath>
-                        </defs>
-                        <g id="Mask_Group_13" data-name="Mask Group 13" transform="translate(-397 -2250)" clip-path="url(#clip-path)">
-                            <path id="information-variant" d="M88.993,26.368a10.138,10.138,0,0,0-9.888,9.888,9.888,9.888,0,0,0,19.776,0,10.138,10.138,0,0,0-9.888-9.888M86.357,58.011c-7.911,0-29.005,17.8-29.005,17.8-1.318.659-.659.659,0,2.637,1.318,1.978.659,1.978,1.978,1.318s3.3-1.978,7.251-4.614c13.843-9.229,1.978,11.866-3.955,46.8-2.637,17.139,13.184,8.57,17.139,5.933S94.267,118,95.586,117.34s0-1.978-.659-3.3-1.318,0-1.318,0c-3.955,2.637-11.866,8.57-13.184,5.274-1.318-3.955,6.592-29.664,11.207-47.463.659-3.955,2.637-13.184-5.274-12.525V58.011Z" transform="translate(382.264 2223.632)" fill="#172737"/>
-                        </g>
-                        </svg>
+                <div class="information-section-row">
 
+                    <div class="information-section-item">
+                        <div class="information-section-item-icon">
+                            <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024"><path fill="currentColor" d="M512 64a448 448 0 1 1 0 896.064A448 448 0 0 1 512 64m67.2 275.072c33.28 0 60.288-23.104 60.288-57.344s-27.072-57.344-60.288-57.344c-33.28 0-60.16 23.104-60.16 57.344s26.88 57.344 60.16 57.344M590.912 699.2c0-6.848 2.368-24.64 1.024-34.752l-52.608 60.544c-10.88 11.456-24.512 19.392-30.912 17.28a12.99 12.99 0 0 1-8.256-14.72l87.68-276.992c7.168-35.136-12.544-67.2-54.336-71.296c-44.096 0-108.992 44.736-148.48 101.504c0 6.784-1.28 23.68.064 33.792l52.544-60.608c10.88-11.328 23.552-19.328 29.952-17.152a12.8 12.8 0 0 1 7.808 16.128L388.48 728.576c-10.048 32.256 8.96 63.872 55.04 71.04c67.84 0 107.904-43.648 147.456-100.416z"/></svg>
+
+                        </div>
+                        <p class="information-section-item-title">Praktisk information</p>
                     </div>
-                    <p class="information-section-item-title">Praktisk information</p>
+
+                    <div class="information-section-item">
+                        <div class="information-section-item-icon">
+                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.8 5.2C13 5 12.2 5 11.4 5l3.2-2.7l1.4 4c-.7-.5-1.4-.8-2.2-1.1M7 7.1c.6-.6 1.3-1.1 2-1.4l-4.1-.8l.7 4.1c.4-.7.8-1.4 1.4-1.9m-1.8 6.7C5 13 5 12.2 5 11.4l-2.7 3.2l4 1.4c-.5-.6-.9-1.4-1.1-2.2M22 19v2H3l5.4-5.5c-1.9-2-1.9-5.1 0-7.1c1.9-1.9 5.1-1.9 7 0l3-3l1.4 1.4L7.7 19zM9.8 14.1L14 9.8c-1.2-1.1-3-1.1-4.2 0c-1.1 1.2-1.1 3.1 0 4.3"/></svg>
+                        </div>
+                        <p class="information-section-item-title">Dag og aften Quests</p>
+                    </div>
+
+                    <div class="information-section-item">
+                        <div class="information-section-item-icon">
+                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M1 2.828c.885-.37 2.154-.769 3.388-.893c1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493c-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752c1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81c-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02c1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877c1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/></svg>
+
+                        </div>
+                        <p class="information-section-item-title">Hvad er historien om Fantasy Quest</p>
+                    </div>
                 </div>
 
-                <div class="information-section-item">
-                    <div class="information-section-item-icon">
-                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="114" viewBox="0 0 126 114">
-                        <defs>
-                            <clipPath id="clip-path">
-                            <rect id="Rectangle_75" data-name="Rectangle 75" width="126" height="114" transform="translate(897 2250)" fill="#fff" stroke="#707070" stroke-width="1"/>
-                            </clipPath>
-                        </defs>
-                        <g id="Mask_Group_14" data-name="Mask Group 14" transform="translate(-897 -2250)" clip-path="url(#clip-path)">
-                            <path id="sun-angle-outline" d="M84.128,31.7c-4.877-1.219-9.754-1.219-14.631-1.219l19.508-16.46L97.54,38.406A55.237,55.237,0,0,0,84.128,31.7M42.674,43.283a40.272,40.272,0,0,1,12.193-8.535L29.872,29.872l4.267,24.995c2.439-4.267,4.877-8.535,8.535-11.583M31.7,84.128c-1.219-4.877-1.219-9.754-1.219-14.631L14.021,89.005,38.406,97.54A34.766,34.766,0,0,1,31.7,84.128m102.417,31.7v12.193H18.289l32.92-33.529a31.3,31.3,0,0,1,0-43.283,30.547,30.547,0,0,1,42.674,0L112.171,32.92l8.535,8.535L46.941,115.829h87.176M59.743,85.957l25.6-26.214a18.808,18.808,0,0,0-25.6,0A19.593,19.593,0,0,0,59.743,85.957Z" transform="translate(885.931 2235.979)" fill="#172737"/>
-                        </g>
-                        </svg>
+                <div class="information-section-row">
 
+                    <div class="information-section-item">
+                        <div class="information-section-item-icon">
+                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M29 14a1 1 0 0 0 1-1V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a1 1 0 0 0 1 1a2 2 0 0 1 0 4a1 1 0 0 0-1 1v5a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1a2 2 0 0 1 0-4m-1 5.87V24h-7v-3h-2v3H4v-4.13a4 4 0 0 0 0-7.74V8h15v3h2V8h7v4.13a4 4 0 0 0 0 7.74"/><path fill="currentColor" d="M19 13h2v6h-2z"/></svg>
+                        </div>
+                        <p class="information-section-item-title">Køb biletter</p>
                     </div>
-                    <p class="information-section-item-title">Dag og aften Quests</p>
+
+                    <div class="information-section-item">
+                        <div class="information-section-item-icon">
+                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 3H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H2V5h20zM21 6h-7v5h7zm-1 2l-2.5 1.75L15 8V7l2.5 1.75L20 7zM9 12a3 3 0 0 0 3-3a3 3 0 0 0-3-3a3 3 0 0 0-3 3a3 3 0 0 0 3 3m0-4a1 1 0 0 1 1 1a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1m6 8.59c0-2.5-3.97-3.59-6-3.59s-6 1.09-6 3.59V18h12zM5.5 16c.72-.5 2.2-1 3.5-1s2.77.5 3.5 1z"/></svg>
+                        </div>
+                        <p class="information-section-item-title">Kontakt os</p>
+                    </div>
+
+                    <div class="information-section-item">
+                        <div class="information-section-item-icon">
+                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
+                        </div>
+                        <p class="information-section-item-title">Download programoversigt</p>
+                    </div>
                 </div>
 
-                <div class="information-section-item">
-                    <div class="information-section-item-icon">
-                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="114" viewBox="0 0 126 114">
-                        <defs>
-                            <clipPath id="clip-path">
-                            <rect id="Rectangle_76" data-name="Rectangle 76" width="126" height="114" transform="translate(1398 2250)" fill="#fff" stroke="#707070" stroke-width="1"/>
-                            </clipPath>
-                        </defs>
-                        <g id="Mask_Group_15" data-name="Mask Group 15" transform="translate(-1398 -2250)" clip-path="url(#clip-path)">
-                            <path id="book-open-blank-variant-outline" d="M68.727,123.136c-8.018-5.155-21.764-8.591-31.5-8.591a63.985,63.985,0,0,0-27.491,5.727H8.591a3.068,3.068,0,0,1-2.864-2.864V34.364c3.436-2.291,6.873-4.582,11.455-5.727a77.024,77.024,0,0,1,20.045-2.864c10.882,0,23.482,2.291,31.5,8.591,8.018-6.3,20.618-8.591,31.5-8.591s13.745,1.145,20.045,2.864c4.582,1.145,8.018,3.436,11.455,5.727v83.618a3.068,3.068,0,0,1-2.864,2.864h-1.145c-8.018-4.582-17.755-5.727-27.491-5.727s-23.482,3.436-31.5,8.591M63,42.955c-8.018-3.436-18.327-5.727-25.773-5.727a73.636,73.636,0,0,0-20.045,2.864v65.864c6.3-2.291,13.173-2.864,20.045-2.864S54.982,105.382,63,108.818V42.955m11.455,65.864c8.018-3.436,18.327-5.727,25.773-5.727s13.745.573,20.045,2.864V40.091a77.024,77.024,0,0,0-20.045-2.864c-6.873,0-17.755,2.291-25.773,5.727Z" transform="translate(1392.272 2232.259)" fill="#172737"/>
-                        </g>
-                        </svg>
+            </div>
 
-                    </div>
-                    <p class="information-section-item-title">Hvad er historien om Fantasy Quest</p>
-                </div>
 
-                <div class="information-section-item">
-                    <div class="information-section-item-icon">
-                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="114" viewBox="0 0 126 114">
-                        <defs>
-                            <clipPath id="clip-path">
-                            <rect id="Rectangle_77" data-name="Rectangle 77" width="126" height="114" transform="translate(397 2665)" fill="#fff" stroke="#707070" stroke-width="1"/>
-                            </clipPath>
-                        </defs>
-                        <g id="Mask_Group_16" data-name="Mask Group 16" transform="translate(-397 -2665)" clip-path="url(#clip-path)">
-                            <path id="ticket-percent-outline" d="M93.24,50.4l7.56,7.56L57.96,100.8,50.4,93.24,93.24,50.4M25.2,25.2H126a12.637,12.637,0,0,1,12.6,12.6V63a12.6,12.6,0,1,0,0,25.2v25.2A12.637,12.637,0,0,1,126,126H25.2a12.637,12.637,0,0,1-12.6-12.6V88.2a12.6,12.6,0,0,0,0-25.2V37.8A12.637,12.637,0,0,1,25.2,25.2m0,12.6V53.55a25.594,25.594,0,0,1,0,44.1V113.4H126V97.65A25.41,25.41,0,0,1,113.4,75.6c0-9.45,5.04-17.01,12.6-22.05V37.8H25.2M59.85,50.4a9.45,9.45,0,1,1-9.45,9.45,9.689,9.689,0,0,1,9.45-9.45m31.5,31.5a9.45,9.45,0,1,1-9.45,9.45A9.689,9.689,0,0,1,91.35,81.9Z" transform="translate(384.4 2646.4)" fill="#172737"/>
-                        </g>
-                        </svg>
-                    </div>
-                    <p class="information-section-item-title">Køb biletter</p>
-                </div>
-
-                <div class="information-section-item">
-                    <div class="information-section-item-icon">
-                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="114" viewBox="0 0 126 114">
-                        <defs>
-                            <clipPath id="clip-path">
-                            <rect id="Rectangle_78" data-name="Rectangle 78" width="126" height="114" transform="translate(897 2665)" fill="#fff" stroke="#707070" stroke-width="1"/>
-                            </clipPath>
-                        </defs>
-                        <g id="Mask_Group_17" data-name="Mask Group 17" transform="translate(-897 -2665)" clip-path="url(#clip-path)">
-                            <path id="card-account-mail-outline" d="M115.5,15.75H10.5A10.531,10.531,0,0,0,0,26.25v73.5a10.531,10.531,0,0,0,10.5,10.5h105A10.531,10.531,0,0,0,126,99.75V26.25a10.531,10.531,0,0,0-10.5-10.5m0,84H10.5V26.25h105v73.5M110.25,31.5H73.5V57.75h36.75V31.5M105,42,91.875,51.45,78.75,42V36.75L91.875,46.2,105,36.75V42M47.25,63A15.469,15.469,0,0,0,63,47.25,15.469,15.469,0,0,0,47.25,31.5,15.469,15.469,0,0,0,31.5,47.25,15.469,15.469,0,0,0,47.25,63m0-21a4.96,4.96,0,0,1,5.25,5.25,4.96,4.96,0,0,1-5.25,5.25A4.96,4.96,0,0,1,42,47.25,4.96,4.96,0,0,1,47.25,42m31.5,45.15c0-13.125-21-18.9-31.5-18.9s-31.5,5.775-31.5,18.9V94.5h63V87.15M28.875,84c3.675-2.625,11.55-5.25,18.375-5.25S61.95,81.375,65.625,84Z" transform="translate(897 2659)" fill="#172737"/>
-                        </g>
-                        </svg>
-                    </div>
-                    <p class="information-section-item-title">Kontakt os</p>
-                </div>
-
-                <div class="information-section-item">
-                    <div class="information-section-item-icon">
-                        <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126" height="114" viewBox="0 0 126 114">
-                        <defs>
-                            <clipPath id="clip-path">
-                            <rect id="Rectangle_79" data-name="Rectangle 79" width="126" height="114" transform="translate(1397 2665)" fill="#fff" stroke="#707070" stroke-width="1"/>
-                            </clipPath>
-                        </defs>
-                        <g id="Mask_Group_18" data-name="Mask Group 18" transform="translate(-1397 -2665)" clip-path="url(#clip-path)">
-                            <path id="calendar-text-outline" d="M108.3,17.1h-5.7V5.7H91.2V17.1H45.6V5.7H34.2V17.1H28.5A11.434,11.434,0,0,0,17.1,28.5v79.8a11.434,11.434,0,0,0,11.4,11.4h79.8a11.434,11.434,0,0,0,11.4-11.4V28.5a11.434,11.434,0,0,0-11.4-11.4m0,91.2H28.5v-57h79.8v57M28.5,39.9V28.5h79.8V39.9H28.5M39.9,62.7h57V74.1h-57V62.7m0,22.8H79.8V96.9H39.9Z" transform="translate(1391.6 2659.3)" fill="#172737"/>
-                        </g>
-                        </svg>
-                    </div>
-                    <p class="information-section-item-title">Download programoversigt</p>
-                </div>
-
+            <h1 class="information-title">PROGRAM</h1>
+            <div class="program-image-box">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/program.png" alt="" class="program-image">
             </div>
 
         <?php endwhile; ?>
