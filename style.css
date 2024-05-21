@@ -49,7 +49,7 @@ nav ul{
 
 nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: var(--light-color);
     font-family: var(--font-family-title);
 }
 
@@ -71,10 +71,10 @@ nav ul li a{
 span{
     display: inline-block;
     width: 30px; 
-    height: 5px;
+    height: 4px;
     border-radius: 25px;
-    background-color: #000;
-    color: #000;
+    background-color: var(--light-color);
+    /* color: var(--light-color); */
 }
 
 .off-screen-menu{
@@ -242,7 +242,172 @@ span{
 }
 
 
+/* Practical Information page */
 
+.background-image-pratical-information{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.book-cover-image{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.practical-info-title-box{
+    height: 72vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-title);
+    font-size: 50px;
+    color: var(--orange-color);
+    margin-bottom: 50px;
+}
+
+.practical-info-title{
+    margin-bottom: 75px;
+}
+
+.practical-info-first-section{
+    display: flex;
+    width: 90%;
+    margin: 0 auto 50px auto;
+    gap: 50px;
+}
+
+.first-section-image-box{
+    width: 50%;
+}
+
+.first-section-image{
+    width: 100%;
+}
+
+.first-section-text-box{
+    width: 40%;
+}
+
+.first-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.first-section-title{
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.practical-info-second-section{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 50px 5%;
+}
+
+.second-section-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second-section-text-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 15px 0 50px 0;
+}
+
+.second-section-image{
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 16px;
+}
+
+.second-section-title{
+    font-family: var(--font-family-title);
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.practical-info-third-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 50px auto;
+}
+
+.third-section-title{
+    font-family: var(--font-family-title);
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.third-section-text-row{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.practical-info-fourth-section{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .fourth-section-vertical-line{
+    height: 2px;
+    width: 100%;
+    transform: rotate(90deg);
+    background-color: var(--light-color);
+    color: var(--light-color);
+} */
+
+.fourth-section-undertitle{
+    border-bottom: 2px solid var(--light-color);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.fourth-section-description{
+    margin-bottom: 30px;
+}
+
+.fourth-section-column{
+    width: 45%;
+}
+
+.fourth-section-image-box{
+    width: 100%;
+}
+
+.fourth-section-image{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.fourth-section-title{
+    font-family: var(--font-family-title);
+    font-size: 30px;
+    margin-top: 30px;
+}
 
 
 /* footer */
@@ -330,6 +495,21 @@ span{
     display: none;
 }
 
+@media only screen and (max-width: 1250px){
+    .practical-info-first-section{
+        flex-direction: column-reverse;
+    }
+
+    .first-section-image-box{
+        width: 80%;
+        align-self: center;
+    }
+    
+    .first-section-text-box{
+        width: 100%;
+    }
+}
+
 /* media query 1000px */
 
 @media only screen and (max-width: 1000px){
@@ -381,5 +561,23 @@ span{
     /*homepage */
     .information-title{
         font-size: 35px;
+    }
+
+    /*practical info*/
+
+    .practical-info-title{
+        font-size: 40px;
+    }
+    
+    .second-section-text-row{
+        flex-wrap: wrap;
+    }
+    
+    .practical-info-fourth-section{
+        flex-direction: column;
+    }
+
+    .fourth-section-column{
+        width: 100%;
     }
 }
