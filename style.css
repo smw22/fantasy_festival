@@ -113,6 +113,7 @@ span{
 
 
 /* Home Page */
+
 .home-container{
     display: flex;
     justify-content: center;
@@ -151,6 +152,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -179,7 +181,7 @@ span{
 
 .program-image-box{
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 
 .program-image{
@@ -252,7 +254,7 @@ span{
     flex-wrap: wrap;
     background-color: black;
     /* margin-top: 100px; */
-    padding-bottom: 15px;
+    padding: 15px 0;
     width: 100%;
     gap: 20px;
 }
@@ -315,11 +317,9 @@ span{
 }
 
 .footer-ilustration{
-    position: absolute;
+    position: relative;
+    transform: translateY(10px);
     width: 100%;
-    transform: translateY(-33%);
-    right: 0;
-    z-index: -1;
 }
 
 .footer-ilustration-image{
@@ -333,23 +333,20 @@ span{
 /* media query 1000px */
 
 @media only screen and (max-width: 1000px){
-    /* .footer-container{
-        flex-direction: column;
-        align-items: start;
-    } */
-    .footer-container{
-        padding-bottom: 100px;
-    }
+    /* footer responsive */
     .footer-section{
-        /* flex-direction: row; */
         height: 100px;
         width: 40%;
         padding: 10px 10px 0 10px;
-        /* border-left: 0;
-        border-bottom: solid 2px var(--light-color); */
     }
     .footer-section-title{
         font-size: 16px;
+    }
+    .footer-section:first-of-type{
+        align-items: start;
+        justify-content: center;
+        padding-top: 10px;
+        border-left: 2px solid var(--light-color);
     }
     .link{
         font-size: 12px;
@@ -357,6 +354,9 @@ span{
     .footer-icon{
         height: 15px;
         width: 15px;
+    }
+    .footer-ilustration{
+        transform: translateY(0);
     }
     .footer-ilustration-image{
         display: none;
@@ -377,7 +377,9 @@ span{
         max-width: 100%;
         right: -100%;
     }
-    .footer-container{
-        padding-bottom: 15px;
+
+    /*homepage */
+    .information-title{
+        font-size: 35px;
     }
 }
