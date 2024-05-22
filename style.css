@@ -137,6 +137,7 @@ span{
     margin-bottom: 50px;
     font-size: 50px;
     font-family: var(--font-family-title);
+    padding-top: 50px;
 }
 
 .information-section{
@@ -144,8 +145,9 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     gap: 20px;
+    background-color: var(--dark-color);
 }
 
 .information-section-row{
@@ -180,12 +182,17 @@ span{
 }
 
 .program-image-box{
-    width: 60%;
-    margin: 0 auto 50px auto;
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .program-image{
-    width: 100%;
+    width: 60%;
 }
 
 
@@ -455,7 +462,7 @@ span{
 
 .characters-section{
     background-color: var(--dark-color);
-    padding: 50px 5%;
+    padding: 50px 5% 100px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -507,6 +514,54 @@ span{
 .characters-text-title{
     font-family: var(--font-family-title);
 }
+
+/* Contact page */
+
+.contact-container {
+    border-radius: 5px;
+    padding: 20px 5%;
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form{
+    background-color: #2DB0B5;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.contact-text-box{
+    width: 40%;
+}
+
+.contact-text-title{
+    font-family: var(--font-family-title);
+    margin-bottom: 15px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  
+  input[type=submit] {
+    background-color: var(--orange-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #d24d00;
+  }
+
 
 /* footer */
 
@@ -580,9 +635,9 @@ span{
 }
 
 .footer-ilustration{
-    position: relative;
-    transform: translateY(10px);
+    /* position: relative; */
     width: 100%;
+    background-color: var(--dark-color);
 }
 
 .footer-ilustration-image{
@@ -695,6 +750,14 @@ span{
     }
 
     .fourth-section-column{
+        width: 100%;
+    }
+
+    /*contact page*/
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-text-box{
         width: 100%;
     }
 }

@@ -12,9 +12,9 @@
                 </div>
             </div>
 
-            <h1 class="information-title">INFORMATION</h1>
+            
             <div class="information-section">
-
+                <h1 class="information-title">INFORMATION</h1>
                 <div class="information-section-row">
 
                     <a class="information-link" href="<?php echo get_permalink(get_page_by_path("information")) ?>"><div class="information-section-item">
@@ -54,12 +54,13 @@
                     </div>
                     </a>
 
-                    <div class="information-section-item">
+                    <a class="information-link" href="<?php echo get_permalink(get_page_by_path("contact")) ?>"><div class="information-section-item">
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22 3H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 16H2V5h20zM21 6h-7v5h7zm-1 2l-2.5 1.75L15 8V7l2.5 1.75L20 7zM9 12a3 3 0 0 0 3-3a3 3 0 0 0-3-3a3 3 0 0 0-3 3a3 3 0 0 0 3 3m0-4a1 1 0 0 1 1 1a1 1 0 0 1-1 1a1 1 0 0 1-1-1a1 1 0 0 1 1-1m6 8.59c0-2.5-3.97-3.59-6-3.59s-6 1.09-6 3.59V18h12zM5.5 16c.72-.5 2.2-1 3.5-1s2.77.5 3.5 1z"/></svg>
                         </div>
                         <p class="information-section-item-title">Kontakt os</p>
                     </div>
+                    </a>
 
                     <a class="information-link" href="<?php echo get_template_directory_uri(); ?>/img/program.png" download><div class="information-section-item">
                         <div class="information-section-item-icon">
@@ -73,8 +74,9 @@
             </div>
 
 
-            <h1 class="information-title">PROGRAM </h1>
+            
             <div class="program-image-box">
+                <h1 class="information-title">PROGRAM </h1>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/program.png" alt="" class="program-image">
             </div>
 

@@ -1,10 +1,11 @@
     </main>
     <footer>
-        <div class="footer-ilustration">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/footer.png" alt="" class="footer-ilustration-image">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/footer-responsive.png" alt="" class="footer-ilustration-image-responsive">
-        </div>
+        
         <div class="footer-container">
+            <div class="footer-ilustration">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/footer.png" alt="" class="footer-ilustration-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/footer-responsive.png" alt="" class="footer-ilustration-image-responsive">
+            </div>
 
             <div class="footer-section">
                 <h1 class="footer-section-title"></h1>
