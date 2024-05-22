@@ -13,8 +13,8 @@
             </div>
             <ul>
                 <li><a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3">KØB BILETTER</a></li>
-                <li><a href="">OM</a></li>
-                <li><a href="">KONTAKT</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path("story")) ?>">OM</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path("kontakt")) ?>">KONTAKT</a></li>
                 <li class="ham-menu">
                     <span></span>
                     <span></span>
