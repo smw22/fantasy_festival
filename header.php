@@ -16,18 +16,20 @@
                 <li><a href="<?php echo get_permalink(get_page_by_path("story")) ?>">OM</a></li>
                 <li><a href="<?php echo get_permalink(get_page_by_path("kontakt")) ?>">KONTAKT</a></li>
                 <li class="ham-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="ham-menu-first-span"></span>
+                    <span class="ham-menu-midle-span"></span>
+                    <span class="ham-menu-last-span"></span>
                 </li>
             </ul>
         </nav>
-        <div class="off-screen-menu">
+        <a href="#">
+            <div class="off-screen-menu">
                 <ul>
                     <li class="link"><a href="https://fantasyfestival.dk/">Fantasy Festival</a></li>
-                    <li class="link">Second</li>
-                    <li class="link">Third</li>
+                    <li class="link"><a href="<?php echo get_template_directory_uri(); ?>/img/program.png" download>Hent Program</a></li>
+                    <li class="link"><a href="<?php echo get_permalink(get_page_by_path("information")) ?>">Praktiske info</a></li>
                 </ul>
             </div>
+        </a>
     </header>
     <main>

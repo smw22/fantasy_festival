@@ -74,8 +74,22 @@ span{
     height: 4px;
     border-radius: 25px;
     background-color: var(--light-color);
+    transition: all 0.3s;
     /* color: var(--light-color); */
 }
+
+.ham-menu-first-span.active{
+    transform: rotate(45deg) translateY(5px);
+}
+
+.ham-menu-midle-span.active{
+    display: none;
+}
+
+.ham-menu-last-span.active{
+    transform: rotate(-45deg) translateY(-5px);
+}
+
 
 .off-screen-menu{
     background-color: var(--dark-color);
@@ -565,19 +579,18 @@ input[type=text], textarea {
 
 /* footer */
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-color: black;
-    /* margin-top: 100px; */
-    padding: 15px 0;
+    padding-bottom: 20px;
     width: 100%;
     gap: 20px;
 }
 
-.footer-section{
+.footer-section {
     display: flex;
     flex-direction: column;
     padding: 20px 20px 0 20px;
@@ -586,46 +599,46 @@ input[type=text], textarea {
     gap: 10px;
 }
 
-.footer-section:first-of-type{
+.footer-section:first-of-type {
     align-items: center;
     justify-content: center;
     padding-top: 0;
     border-left: none;
 }
 
-.footer-section-links{
+.footer-section-links {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.footer-icon{
+.footer-icon {
     color: var(--light-color);
     height: 30px;
     width: 30px;
 }
 
-.footer-section-title{
+.footer-section-title {
     color: var(--light-color);
 }
 
-.phone-number{
+.phone-number {
     display: flex;
 }
 
-.phone-number-text{
+.phone-number-text {
     padding-left: 10px;
 }
 
-.email{
+.email {
     display: flex;
 }
 
-.email-text{
+.email-text {
     padding-left: 10px;
 }
 
-.link{
+.link {
     color: var(--light-color);
 }
 
@@ -634,19 +647,26 @@ input[type=text], textarea {
     text-decoration: none;
 }
 
-.footer-ilustration{
-    /* position: relative; */
+.footer-ilustration {
     width: 100%;
     background-color: var(--dark-color);
+    margin: 0;
+    padding: 0;
 }
 
-.footer-ilustration-image{
+.footer-ilustration-image {
     width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-.footer-ilustration-image-responsive{
+.footer-ilustration-image-responsive {
     display: none;
+    margin: 0;
+    padding: 0;
 }
+
 
 /* media query 1250px */
 
@@ -701,7 +721,7 @@ input[type=text], textarea {
         border-left: 2px solid var(--light-color);
     }
     .link{
-        font-size: 12px;
+        font-size: 20px;
     }
     .footer-icon{
         height: 15px;
