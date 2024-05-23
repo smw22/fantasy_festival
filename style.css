@@ -66,6 +66,7 @@ nav ul li a{
     flex-direction: column;
     gap: 3px;
     z-index: 100;
+    cursor: pointer;
 }
 
 span{
@@ -121,10 +122,26 @@ span{
     right: 0;
 }
 
+.off-screen-menu-link{
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.responsive-menu{
+    display: none;
+}
 
 /* Header */
 
-
+/* Temporal Header background */
+.temporal-blue-header-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 125px;
+    background-color: var(--dark-color);
+    z-index: -10;
+}
 
 /* Home Page */
 
@@ -197,7 +214,7 @@ span{
 
 .program-image-box{
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 30%;
     background-color: var(--dark-color);
     display: flex;
     flex-direction: column;
@@ -237,6 +254,7 @@ span{
     flex-direction: column;
     gap: 300px;
     width: 90%;
+    padding-bottom: 30%;
 }
 
 .information-text-box{
@@ -388,7 +406,7 @@ span{
 .practical-info-fourth-section{
     background-color: var(--dark-color);
     color: var(--light-color);
-    padding: 30px 5%;
+    padding: 30px 5% 30% 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -474,6 +492,10 @@ span{
     font-family: var(--font-family-title);
 }
 
+.characters{
+    padding-bottom: 20%;
+}
+
 .characters-section{
     background-color: var(--dark-color);
     padding: 50px 5% 100px 5%;
@@ -533,7 +555,7 @@ span{
 
 .contact-container {
     border-radius: 5px;
-    padding: 20px 5%;
+    padding: 20px 5% 30% 5%;
     display: flex;
     gap: 50px;
 }
@@ -578,6 +600,8 @@ input[type=text], textarea {
 
 
 /* footer */
+
+
 
 .footer-container {
     display: flex;
@@ -647,16 +671,21 @@ input[type=text], textarea {
     text-decoration: none;
 }
 
+.footer-ilustration-box{
+    position: relative;
+    width: 100%;
+}
+
 .footer-ilustration {
     width: 100%;
-    background-color: var(--dark-color);
+    position: absolute;    
     margin: 0;
     padding: 0;
+    bottom: -10px;
 }
 
 .footer-ilustration-image {
     width: 100%;
-    display: block;
     margin: 0;
     padding: 0;
 }
@@ -721,14 +750,14 @@ input[type=text], textarea {
         border-left: 2px solid var(--light-color);
     }
     .link{
-        font-size: 20px;
+        font-size: 12px;
     }
     .footer-icon{
         height: 15px;
         width: 15px;
     }
     .footer-ilustration{
-        transform: translateY(0);
+        bottom: -2px;
     }
     .footer-ilustration-image{
         display: none;
@@ -750,6 +779,13 @@ input[type=text], textarea {
         right: -100%;
     }
 
+    .responsive-menu{
+        display: block;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
     /*homepage */
     .information-title{
         font-size: 35px;

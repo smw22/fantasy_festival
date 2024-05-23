@@ -1,6 +1,10 @@
 <?php get_header() ?>
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
+
+            <div class="temporal-blue-header-background">
+                
+            </div>
             
             <div class="home-container">
                 <div class="quest-buttons">
