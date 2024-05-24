@@ -11,6 +11,7 @@ Author: Sergio Moron Westergaard
     --light-color: #f5f4f0;
     --dark-color: #172737;
     --orange-color: #d95407;
+    --blue-color: #2DB0B5;
 }
 
 *{
@@ -37,6 +38,9 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    position: relative;
 }
 
 nav ul{
@@ -54,11 +58,14 @@ nav ul li a{
 }
 
 .logo{
-    width: 100px;
+    width: 200px;
+    align-items: center;
+    display: flex;
 }
 
 .logo-image{
     width: 100%;
+    height: auto;
 }
 
 .ham-menu{
@@ -138,12 +145,26 @@ span{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 125px;
-    background-color: var(--dark-color);
-    z-index: -10;
+    height: 100px;
+    background-color: #172737;
+    z-index: 10;
+    opacity: 0.67;
 }
 
 /* Home Page */
+
+.portal-backgroud{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    /* z-index: 1; */
+}
+
+.portal-background-image{
+    width: 100%;
+    z-index: -5;
+
+}
 
 .home-container{
     display: flex;
@@ -152,12 +173,28 @@ span{
     text-align: center;
     gap: 10px;
     margin: 100px 0;
+    position: relative;
 }
 
 .quest-buttons{
     background-color: var(--orange-color);
     padding: 15px;
     width: 100px;
+    color: var(--light-color);
+    /* z-index: 1; */
+}
+
+.quest-link{
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.day-quest-button{
+    background-color: var(--blue-color);
+}
+
+.night-quest-button{
+    background-color: var(--dark-color);
 }
 
 .information-title{
@@ -166,9 +203,10 @@ span{
     align-items: center;
     width: 100%;
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: 60px;
     font-family: var(--font-family-title);
     padding-top: 50px;
+    color: var(--orange-color);
 }
 
 .information-section{
@@ -191,14 +229,18 @@ span{
 
 .information-section-item{
     background-color: var(--orange-color);
-    width: 200px;
-    height: 150px;
+    width: 350px;
+    height: 225px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.information-section-item-title{
+    font-size: 20px;
 }
 
 .information-link{
@@ -223,11 +265,23 @@ span{
 }
 
 .program-image{
-    width: 60%;
+    width: 80%;
+    border-radius: 50px;
 }
 
 
 /*Quest Page */
+
+.night-background{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.night-background-image{
+    width: 100%;
+    z-index: -5;
+}
 
 .container{
     display: flex;
@@ -240,13 +294,17 @@ span{
 
 .title-box{
     width: 500px;
-    height: 300px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--orange-color);
+    background-color: var(--blue-color);
     margin-bottom: 250px;
-    font-family: var(--font-family-title);
+    color: var(--light-color);
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    z-index: 99;
 }
 
 .information{
@@ -260,11 +318,12 @@ span{
 .information-text-box{
     width: 40%;
     height: fit-content;
-    background-color: var(--dark-color);
+    background-color: var(--orange-color);
     padding: 20px;
     opacity: 0.9;
     color: var(--light-color);
     opacity: 0;
+    text-align: center;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 0.8s;
@@ -561,7 +620,7 @@ span{
 }
 
 .contact-form{
-    background-color: #2DB0B5;
+    background-color: var(--blue-color);
     padding: 20px;
     border-radius: 16px;
 }
@@ -767,6 +826,17 @@ input[type=text], textarea {
         display: block;
         width: 100%;
     }
+    
+    /* Quest responsive*/
+    .title-box{
+        width: 90%;
+        height: auto;
+        font-size: 12px;
+    }
+    .information-text-box{
+        font-size: 12px;
+        width: 60%;
+    }
 }
 
 /* phone version */
@@ -789,6 +859,20 @@ input[type=text], textarea {
     /*homepage */
     .information-title{
         font-size: 35px;
+    }
+
+    .information-section-item{
+        width: 250px;
+        height: 175px;
+    }
+
+    .information-section-item-title{
+        font-size: 16px;
+    }
+    
+
+    .program-image{
+        width: 80%;
     }
 
     /*practical info*/

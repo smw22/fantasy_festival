@@ -6,13 +6,20 @@
                 
             </div>
             
-            <div class="home-container">
-                <div class="quest-buttons">
-                    <a class="information-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">DAG</a>
-                </div>
+            
+            <!-- <div class="portal-backgroud">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/douple-portal.png" alt="" class="portal-background-image">
+            </div> -->
 
-                <div class="quest-buttons">
-                    <a class="information-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">AFTEN</a>
+            <div class="home-container">
+                
+
+                <div class="quest-buttons night-quest-button">
+                    <a class="quest-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">NAT</a>
+                </div>
+                
+                <div class="quest-buttons day-quest-button">
+                    <a class="quest-link" href="#">DAG</a>
                 </div>
             </div>
 
@@ -50,7 +57,7 @@
 
                 <div class="information-section-row">
 
-                    <a class="information-link" href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"><div class="information-section-item">
+                    <a class="information-link" href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"><div class="information-section-item">
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M29 14a1 1 0 0 0 1-1V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a1 1 0 0 0 1 1a2 2 0 0 1 0 4a1 1 0 0 0-1 1v5a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1a2 2 0 0 1 0-4m-1 5.87V24h-7v-3h-2v3H4v-4.13a4 4 0 0 0 0-7.74V8h15v3h2V8h7v4.13a4 4 0 0 0 0 7.74"/><path fill="currentColor" d="M19 13h2v6h-2z"/></svg>
                         </div>

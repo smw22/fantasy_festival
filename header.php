@@ -8,11 +8,13 @@
 <body>
     <header id="home">
         <nav>
-            <div class="logo">
-                <a href="<?php echo get_permalink(get_page_by_path("frontpage")) ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/drage.jpg" alt="" class="logo-image"></a>
-            </div>
+            <a href="<?php echo get_permalink(get_page_by_path("frontpage")) ?>">
+                <div class="logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-website.png" alt="" class="logo-image">
+                </div>
+            </a>
             <ul>
-                <li class="nav-menu"><a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3">KØB BILETTER</a></li>
+                <li class="nav-menu"><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4">KØB BILETTER</a></li>
                 <li class="nav-menu"><a href="<?php echo get_permalink(get_page_by_path("story")) ?>">OM</a></li>
                 <li class="nav-menu"><a href="<?php echo get_permalink(get_page_by_path("contact")) ?>">KONTAKT</a></li>
                 <li class="ham-menu">
@@ -26,7 +28,7 @@
         <a href="#">
             <div class="off-screen-menu">
                 <ul>
-                    <li class="responsive-menu"><a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" class="off-screen-menu-link">Køb biletter</a></li>
+                    <li class="responsive-menu"><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="off-screen-menu-link">Køb biletter</a></li>
                     <li class="responsive-menu"><a href="<?php echo get_permalink(get_page_by_path("story")) ?>" class="off-screen-menu-link">Om</a></li>
                     <li class="responsive-menu"><a href="<?php echo get_permalink(get_page_by_path("contact")) ?>" class="off-screen-menu-link">Kontakt</a></li>
                     <li class=""><a href="https://fantasyfestival.dk/" class="off-screen-menu-link">Fantasy Festival</a></li>
