@@ -241,10 +241,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="fourth-section-vertical-line">
-
-                </div> -->
-
                 <div class="fourth-section-column">
                     <div class="fourth-section-title">
                     <h1>Aften Quest</h1>

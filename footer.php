@@ -1,6 +1,7 @@
     <?php
     // Get the current page slug
     $current_page = basename($_SERVER['PHP_SELF'], ".php");
+    echo "<!-- Current Page: $current_page -->";
 
     // Define a variable to hold the footer class
     $footer_class = '';
