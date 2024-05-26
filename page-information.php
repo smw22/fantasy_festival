@@ -270,4 +270,10 @@
 
         <?php endwhile; ?>
     <?php endif; ?>
-<?php get_footer() ?>    
+<?php 
+if(is_page(12)) {
+   get_footer('frontpage');
+} else {
+   get_footer();
+}
+?>    

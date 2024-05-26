@@ -147,4 +147,10 @@
 
         <?php endwhile; ?>
     <?php endif; ?>
-<?php get_footer() ?>    
+<?php 
+if(is_page(16)) {
+   get_footer('quest');
+} else {
+   get_footer();
+}
+?>  

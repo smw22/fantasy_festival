@@ -43,4 +43,10 @@
 
         <?php endwhile; ?>
     <?php endif; ?>
-<?php get_footer() ?>
+<?php 
+if(is_page(10)) {
+   get_footer('quest');
+} else {
+   get_footer();
+}
+?>  

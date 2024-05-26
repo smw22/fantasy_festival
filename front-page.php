@@ -93,4 +93,10 @@
 
         <?php endwhile; ?>
     <?php endif; ?>
-<?php get_footer() ?>    
+<?php 
+if(is_page(7)) {
+   get_footer('frontpage');
+} else {
+   get_footer();
+}
+?>  

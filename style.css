@@ -784,26 +784,17 @@ input[type=submit]:hover {
 }
 
 /* Different footer colours in different pages */
-.footer-default {
+.footer{
     background-color: var(--dark-color);
 }
 
-.footer-home {
+.footer-frontpage {
     background-color: var(--blue-color);
 }
 
 .footer-quest{
     background-color: var(--orange-color);
 }
-
-.footer-information{
-    background-color: var(--blue-color);
-}
-
-.footer-story{
-    background-color: var(--orange-color);
-}
-
 
 
 
