@@ -1,11 +1,14 @@
 <?php get_header() ?>
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
-            <div class="background-image-story">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/bog.jpg" alt="" class="story-image">
-            </div>
 
+            <div class="background-image-story">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/bog.jpg" alt="" class="story-image">
+            </div>
             <div class="story-title-box">
+                <!-- <div class="background-image-story">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/bog.jpg" alt="" class="story-image">
+                </div> -->
                 <h1 class="story-title">HISTORIEN</h1>
             </div>
 

@@ -12,6 +12,7 @@
             
             <div class="container">
                 <div class="title-box">
+                    <h1>AFTEN QUEST</h1>
                     <p>En dag trak skyerne sig sammen over havet mod vest, og det blev unaturligt mørkt. Lyn flængede himlen, og en stor, bevinget skabning blev synlig. De fire statuer rejste sig op; havets vogtere var blevet vækket. De gjorde sig klar og råbte. Råbene kunne høres over hele landet, på tværs af portaler til andre verdener:</p>
                 </div>
                 <div class="information">
@@ -32,12 +33,11 @@
                         Fantasy Quest Esbjerg er et oplevelsesløb, som du kan deltage i under Fantasyfestivalen i Esbjerg den 14. september 2024. Løbet indeholder en quest med opgaver, der skal løses undervejs på ruten. Questen tager udgangspunkt i en unik fantasyfortælling skrevet i samarbejde med Lakserytteren.
                     </div>
                     <div class="information-text-box even">
-                        Løbet af opdelt i to - Family Quest & Fantasy Quest. Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i questen op. Nu skal der virkelig tænkes kreativt og løses opgaver, der kræver både mod, samarbejde og snilde for at I kan gennemføre questen og redde Esbjerg. 
-                        Du kan deltage i AftenQuesten både alene og sammen med vennerne.
+                        Oplevelsesløbet af opdelt i to slags Quest - <strong>Family Quest & Fantasy Quest.</strong> Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i questen op. Nu skal der virkelig tænkes kreativt og løses opgaver, der kræver både mod, samarbejde og kunnen for at I kan gennemføre questen og redde Esbjerg. 
                     </div>
                     <div class="information-text-box uneven">
-                        Så tag dine venner med og vær forberedt på en nat fyldt med gys, eventyr og heltemod. Fantasy Quest Esbjerg venter på dig!
-                    </div>
+                    Du kan deltage i AftenQuesten både alene og sammen med vennerne. <br>
+                    Så tag dine venner med og vær forberedt på en nat fyldt med gys, eventyr og heltemod. Fantasy Quest Esbjerg venter på dig!                    </div>
                 </div>
             </div>
 

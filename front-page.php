@@ -7,19 +7,19 @@
             </div>
             
             
-            <!-- <div class="portal-backgroud">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/douple-portal.png" alt="" class="portal-background-image">
-            </div> -->
+            <div class="portal-backgroud">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/portal-website.webp" alt="" class="portal-background-image">
+            </div>
 
             <div class="home-container">
                 
 
                 <div class="quest-buttons night-quest-button">
-                    <a class="quest-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">NAT</a>
+                    <a class="quest-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">AFTEN QUEST</a>
                 </div>
                 
                 <div class="quest-buttons day-quest-button">
-                    <a class="quest-link" href="#">DAG</a>
+                    <a class="quest-link" href="#">DAG QUEST</a>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.8 5.2C13 5 12.2 5 11.4 5l3.2-2.7l1.4 4c-.7-.5-1.4-.8-2.2-1.1M7 7.1c.6-.6 1.3-1.1 2-1.4l-4.1-.8l.7 4.1c.4-.7.8-1.4 1.4-1.9m-1.8 6.7C5 13 5 12.2 5 11.4l-2.7 3.2l4 1.4c-.5-.6-.9-1.4-1.1-2.2M22 19v2H3l5.4-5.5c-1.9-2-1.9-5.1 0-7.1c1.9-1.9 5.1-1.9 7 0l3-3l1.4 1.4L7.7 19zM9.8 14.1L14 9.8c-1.2-1.1-3-1.1-4.2 0c-1.1 1.2-1.1 3.1 0 4.3"/></svg>
                         </div>
-                        <p class="information-section-item-title">Dag og aften Quests</p>
+                        <p class="information-section-item-title">Kort om de forskellige Quests</p>
                     </div>
                     </a>
 
@@ -73,7 +73,7 @@
                     </div>
                     </a>
 
-                    <a class="information-link" href="<?php echo get_template_directory_uri(); ?>/img/program.png" download><div class="information-section-item">
+                    <a class="information-link" href="<?php echo get_template_directory_uri(); ?>/img/program.pdf" download><div class="information-section-item">
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z"/></svg>
                         </div>
@@ -88,7 +88,7 @@
             
             <div class="program-image-box">
                 <h1 class="information-title">PROGRAM </h1>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/program.png" alt="" class="program-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/program-website.webp" alt="" class="program-image">
             </div>
 
         <?php endwhile; ?>

@@ -58,7 +58,7 @@ nav ul li a{
 }
 
 .logo{
-    width: 200px;
+    width: 400px;
     align-items: center;
     display: flex;
 }
@@ -112,7 +112,7 @@ span{
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     color: var(--light-color);
     z-index: 99;
 }
@@ -145,7 +145,7 @@ span{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: #172737;
     z-index: 10;
     opacity: 0.67;
@@ -171,16 +171,21 @@ span{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: 30px;
+    height: 100vh;
     margin: 100px 0;
     position: relative;
 }
 
 .quest-buttons{
     background-color: var(--orange-color);
-    padding: 15px;
-    width: 100px;
+    padding: 30px;
+    width: 200px;
     color: var(--light-color);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 16px;
+    transform: translateY(-50px);
     /* z-index: 1; */
 }
 
@@ -210,13 +215,16 @@ span{
 }
 
 .information-section{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    margin-top: 400px;
     gap: 20px;
     background-color: var(--dark-color);
+    z-index: 10;
 }
 
 .information-section-row{
@@ -256,6 +264,7 @@ span{
 
 .program-image-box{
     width: 100%;
+    padding-top: 200px;
     padding-bottom: 30%;
     background-color: var(--dark-color);
     display: flex;
@@ -292,18 +301,24 @@ span{
     margin-bottom: 100px;
 }
 
+h1{
+    font-family: var(--font-family-title);
+}
+
 .title-box{
     width: 500px;
     height: 250px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: var(--blue-color);
     margin-bottom: 250px;
     color: var(--light-color);
     margin-top: 50px;
     padding: 25px;
-    text-align: center;
+    border-radius: 16px;
     z-index: 99;
 }
 
@@ -319,7 +334,7 @@ span{
     width: 40%;
     height: fit-content;
     background-color: var(--orange-color);
-    padding: 20px;
+    padding: 25px;
     opacity: 0.9;
     color: var(--light-color);
     opacity: 0;
@@ -327,6 +342,7 @@ span{
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 0.8s;
+    border-radius: 16px;
 }
 
 .show{
@@ -520,7 +536,7 @@ span{
 }
 
 .story-title-box{
-    height: 72vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -537,7 +553,7 @@ span{
 
 .story-text-box{
     width: 90%;
-    margin: 50px auto 50px auto;
+    margin: 50px auto 100px auto;
 }
 
 .story-text-box-row{
@@ -667,7 +683,7 @@ input[type=text], textarea {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: black;
+    /* background-color: black; */
     padding-bottom: 20px;
     width: 100%;
     gap: 20px;
@@ -755,11 +771,43 @@ input[type=text], textarea {
     padding: 0;
 }
 
+/* Different footer colours in different pages */
+.footer-default {
+    background-color: var(--dark-color);
+}
+
+.footer-home {
+    background-color: var(--blue-color);
+}
+
+.footer-quest{
+    background-color: var(--orange-color);
+}
+
+.footer-information{
+    background-color: var(--blue-color);
+}
+
+.footer-story{
+    background-color: var(--orange-color);
+}
+
+/* media query 1700px for illustration*/
+@media only screen and (max-width: 1250px){
+    .information-section{
+        margin-top: 350px;
+    }
+}
+
 
 /* media query 1250px */
 
 
 @media only screen and (max-width: 1250px){
+    /* illustration responsive*/
+    .information-section{
+        margin-top: 100px;
+    }
     /*first section responsive*/
     .practical-info-first-section{
         flex-direction: column-reverse;
@@ -793,6 +841,25 @@ input[type=text], textarea {
 /* media query 1000px */
 
 @media only screen and (max-width: 1000px){
+    /*illustration responsive*/
+    .information-section{
+        margin-top: 0px;
+    }
+    .home-container{
+        height: 65vh;
+    }
+    .quest-buttons{
+        transform: translateY(-100px);
+    }
+    /*header*/
+    
+    .responsive-menu{
+        display: block;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
     /* footer responsive */
     .footer-section{
         height: 100px;
@@ -842,19 +909,31 @@ input[type=text], textarea {
 /* phone version */
 
 @media only screen and (max-width: 768px){
+    /*illustration responsive*/
+    .home-container{
+        height: 35vh;
+    }
+    .portal-background-image{
+        object-fit: cover;
+        object-position: center center;
+        height: 100vh;
+    }
+    .quest-buttons{
+        width: 125px;
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    .program-image-box{
+        padding-top: 0;
+    }
     /* header */
+    .logo{
+        width: 200px;
+    }
     .off-screen-menu{
         width: 100%;
         max-width: 100%;
         right: -100%;
-    }
-
-    .responsive-menu{
-        display: block;
-    }
-    
-    .nav-menu{
-        display: none;
     }
     /*homepage */
     .information-title{

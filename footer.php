@@ -1,5 +1,26 @@
+    <?php
+    // Get the current page slug
+    $current_page = basename($_SERVER['PHP_SELF'], ".php");
+
+    // Define a variable to hold the footer class
+    $footer_class = '';
+
+    // Set the class based on the current page
+    if ($current_page == 'front-page') {
+        $footer_class = 'footer-home';
+    } elseif ($current_page == 'page-information') {
+        $footer_class = 'footer-information';
+    } elseif ($current_page == 'page-quest') {
+        $footer_class = 'footer-quest';
+    } elseif ($current_page == 'page-story') {
+        $footer_class = 'footer-story';
+    }
+    else {
+        $footer_class = 'footer-default';
+    }
+    ?>   
     </main>
-    <footer>
+    <footer class="<?php echo $footer_class; ?>">
         <div class="footer-ilustration-box">
             <div class="footer-ilustration">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/footer.png" alt="" class="footer-ilustration-image">
