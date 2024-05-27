@@ -85,28 +85,28 @@
                         </p>
 
                         <div class="second-section-text-row">
-                            <p>
+                            <p class="second-section-text-description">
                                 <strong>Q-Park Torvet</strong><br>
                                 Beliggenhed: Ved Torvet, centralt i Esbjerg. <br>
                                 Parkeringspladser: 250. <br>
                                 Åbningstider: Døgnåben. <br>
                                 Betaling: Automat eller via app.
                             </p>
-                            <p>
+                            <p class="second-section-text-description">
                                 <strong>Skt. Josephs Plads</strong><br>
                                 Beliggenhed: Nær Esbjerg Station og gågaden. <br>
                                 Parkeringspladser: 150. <br>
                                 Åbningstider: Døgnåben. <br>
                                 Betaling: Automat eller via app.
                             </p>
-                            <p>
+                            <p class="second-section-text-description">
                                 <strong>Broen Shopping P-hus</strong> <br>
                                 Beliggenhed: Tilknyttet Broen Shoppingcenter, tæt på festivalområdet. <br>
                                 Parkeringspladser: 500. <br>
                                 Åbningstider: Døgnåben. <br>
                                 Betaling: Automat eller via app. <br>
                             </p>
-                            <p>
+                            <p class="second-section-text-description">
                                 <strong>Esbjerg Rådhus P-plads</strong><br>
                                 Beliggenhed: Ved Esbjerg Rådhus. <br>
                                 Parkeringspladser: 100. <br>

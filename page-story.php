@@ -108,7 +108,7 @@
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Gygaz</h1>
                                 <p>
-                                    Gygaz, en ambitiøs troldmandslærling, er en uundværlig allieret for helten. Hans dybe viden om magi og eventyrlyst fører dem gennem farlige udfordringer. Med sin forståelse af mystiske artefakter og evne til at læse gamle runer hjælper Gygaz med at løse gåder og overvinde forhindringer på vejen mod målet. Hans ungdommelige mod og drømme om magt driver gruppen fremad og viser, at selv de mindste kan opnå storhed gennem tapperhed.                                
+                                    Gygaz, en ambitiøs troldmandslærling, er en uundværlig allieret for helten. Hans dybe viden om magi og eventyrlyst fører dem gennem farlige udfordringer. Med sin forståelse af mystiske artefakter og evne til at læse gamle runer hjælper Gygaz med at løse gåder og overvinde forhindringer på vejen mod målet.                                
                                 </p>
                             </div>
                         </div>

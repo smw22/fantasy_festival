@@ -242,6 +242,12 @@ span{
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.information-section-item:hover{
+    scale: 1.1;
+    color: var(--light-color);
 }
 
 .information-section-item-title{
@@ -282,6 +288,7 @@ span{
     width: 100%;
     z-index: -1;
     grid-area: 1 / 1;
+    display: flex;
 }
 
 .night-background-image{
@@ -289,7 +296,6 @@ span{
     object-fit: cover;
     object-position: top center;
     height: 7250px;
-
 }
 
 .wrapper{
@@ -305,8 +311,7 @@ span{
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    margin-bottom: 100px;
-    margin-top: 200px;
+    margin-top: 0;
     grid-row-start: 1;
     z-index: 1;
     grid-area: 1 / 1;
@@ -340,6 +345,7 @@ h1{
     transform: translateX(-100%);
     transition: all 0.8s;
     border-radius: 16px;
+    font-size: 20px;
 }
 
 .information{
@@ -363,6 +369,7 @@ h1{
     transform: translateX(-100%);
     transition: all 0.8s;
     border-radius: 16px;
+    font-size: 20px;
 }
 
 .show{
@@ -523,12 +530,14 @@ h1{
 
 .fourth-section-description{
     margin-bottom: 30px;
+    display: grid;
+    gap: 20px;
 }
 
 .fourth-section-description-list{
     margin-top: 15px;
     display: grid;
-    gap: 15px;
+    gap: 10px;
 }
 
 .fourth-section-column{
