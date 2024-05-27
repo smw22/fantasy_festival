@@ -121,21 +121,27 @@
                         </p>
 
                         <div class="second-section-text-row">
-                            <p>
+                            <p class="second-section-text-description">
                                 <strong>Tog</strong><br>
                                 Esbjerg Station: Beliggende centralt i byen, kun få minutters gang fra festivalområdet. <br>
                                 Forbindelser: Direkte tog fra København, Odense, og Aarhus.
                             </p>
-                            <p>
+                            <p class="second-section-text-description">
                                 <strong>Bus</strong><br>
                                 Esbjerg Busterminal: Lige ved siden af Esbjerg Station. <br>
                                 Lokale busruter: Flere lokale busruter kører regelmæssigt og stopper tæt på festivalområdet. <br>
                                 Regionale busser: Forbindelser til nærliggende byer som Ribe, Varde og Bramming.
                             </p>
-                            <p>
+                            <p class="second-section-text-description">
                                 <strong>Taxi og Ridesharing</strong> <br>
                                 Taxi: Taxaer er let tilgængelige i hele byen og kan nemt bestilles via telefon eller app. <br>
                                 Ridesharing: Tjenester som Uber og Bolt er tilgængelige i Esbjerg og kan bruges til nem transport til og fra festivalen.
+                            </p>
+                            <p class="second-section-text-description">
+                                <strong>Priser</strong> <br>
+                                Når du parkerer skal du registrere dig og din bil i en automat eller en app. De første to (eller fire) timer vil stadig være gratis. Herefter koster hver time 12 kroner – og det er helt uden at du behøver at gå tilbage til din bil eller automaten. <br>
+
+                                Betalingstiderne strækker sig fra mandag-fredag 8-18 samt lørdag 8-14. På helligdage og uden for disse tidsrum, er det gratis at parkere helt uden at registrere. 
                             </p>
                         </div>
                     </div>
@@ -206,6 +212,16 @@
                             </p>
                         </div>
 
+                        <div class="third-section-text-row">
+                            <div class="third-section-subtitle">
+                                <h2>Betalingsmuligheder</h2>
+                            </div>
+                            <p>
+                                <strong>Der kan betales med hhv.</strong><br>
+                                Mobilepay, kort og kontanter.
+                            </p>
+                        </div>
+
                         <p>
                         Fantasy Quest Festival tilbyder en bred vifte af oplevelser for alle aldre, både gratis og mod betaling. Uanset hvordan du vælger at deltage, glæder vi os til at byde dig velkommen til en uforglemmelig rejse ind i det magiske univers!
                         </p>
@@ -226,15 +242,15 @@
                         <p>
                             Familieudgaven af Fantasy Quest Esbjerg er et oplevelsesløb for hele familien, med tryk på oplevelse. For det er ikke et klassisk løb. Det handler om at leve sig ind i en anden verden, en magisk historie, hvor I sammen er på en ”quest” – en mission, en opgave, en jagt. Her møder I magiske væsner, der stiller jer nogle opgaver og udfordringer undervejs mod målet, som I skal løse sammen for at gennemføre Questen. Sværhedsgraden er sænket, så børnene kan være med til at løse opgaverne. Men tag ikke fejl, der er brug for alle gode kræfter og samarbejdsevner, hvis I skal være med til at redde Esbjerg. Som en ekstra bonus kan I møde YouTuberen Lakserytteren undervejs i Questen rundt i Esbjergs gader.
                         </p>
-                        <p>
-                            <strong>Hvor:</strong> Torvet Esbjerg <br>
+                        <div class="fourth-section-description-list">
+                            <p><strong>Hvor:</strong> Torvet Esbjerg <br></p>
 
-                            <strong>Hvornår:</strong> 14. september 2024 <br>
+                            <p><strong>Hvornår:</strong> 14. september 2024 <br></p>
 
-                            <strong>Tidspunkt:</strong> kl. 10.00-14.30 <br>
+                            <p><strong>Tidspunkt:</strong> kl. 10.00-14.30 <br></p>
 
-                            <strong>Niveau:</strong> Børnevenligt <br>
-                        </p>
+                            <p><strong>Niveau:</strong> Børnevenligt <br></p>
+                        </div>
                     </div>
                     <div class="fourth-section-image-box">  
                         <img src="<?php echo get_template_directory_uri(); ?>/img/quest-img2.jpg" alt="" class="fourth-section-image">
@@ -251,15 +267,15 @@
                     <div class="fourth-section-description">
                         <p>
                             Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. Nu skal der virkelig tænkes kreativt og løses opgaver, der kræver både mod, samarbejde og snilde for at I kan gennemføre questen og redde Esbjerg. Er du vild med at løse gåder og knække koder, så må du ikke snyde dig selv for denne ultimative oplevelse. Vi sender dig og vennerne ud på jeres ultimative eventyr i Esbjergs gader og stræder. Her vil I blive nødt til at samarbejde og udtænke nye løsninger for at gennemføre AftenQuesten.                    </p>
-                        <p>
-                            <strong>Hvor:</strong> Torvet Esbjerg <br>
+                        <div class="fourth-section-description-list">
+                            <p><strong>Hvor:</strong> Torvet Esbjerg <br></p>
 
-                            <strong>Hvornår:</strong> 14. september 2024 <br>
+                            <p><strong>Hvornår:</strong> 14. september 2024 <br></p>
 
-                            <strong>Tidspunkt:</strong> kl. 18.00-22.30 <br>
+                            <p><strong>Tidspunkt:</strong> kl. 18.00-22.30 <br></p>
 
-                            <strong>Niveau:</strong> 18+ år <br>
-                        </p>
+                            <p><strong>Niveau:</strong> 18+ år <br></p>
+                        </div>
                     </div>
                     <div class="fourth-section-image-box">  
                         <img src="<?php echo get_template_directory_uri(); ?>/img/quest-img1.jpg" alt="" class="fourth-section-image">
@@ -271,7 +287,7 @@
         <?php endwhile; ?>
     <?php endif; ?>
 <?php 
-if(is_page(12)) {
+if(is_page(14)) {
    get_footer('frontpage');
 } else {
    get_footer();

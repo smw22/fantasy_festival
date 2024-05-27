@@ -29,4 +29,6 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll(".information-text-box");
+const hiddenElementsTitle = document.querySelectorAll(".title-box");
 hiddenElements.forEach((el) => observer.observe(el));
+hiddenElementsTitle.forEach((el) => observer.observe(el));

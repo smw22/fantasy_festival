@@ -52,10 +52,10 @@
                     <div class="characters-row">
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/arkivanen.jpg" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Arkivaren.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
-                                <h1 class="characters-text-title">Arkivanen</h1>
+                                <h1 class="characters-text-title">Arkivaren</h1>
                                 <p>
                                     Arkivaren er den skumle, kloge type, der kender alle historierne - selv dem, du helst vil glemme. Han svælger i de blodige detaljer og holder styr på alting, fra de dødes riger til de levendes hemmeligheder. Med en evigvisdom og et skævt smil vogter han over fortidens dystre hemmeligheder og sørger for, at intet går tabt i glemslen.
                                 </p>
@@ -64,7 +64,7 @@
 
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/gnist.jpg" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Gnist.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Gnist</h1>
@@ -76,7 +76,7 @@
 
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/Malice.jpg" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Malice.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Malice</h1>
@@ -91,7 +91,7 @@
                     <div class="characters-row">
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/Havfruedronning.jpg" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Vogtere.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Havfruedronningen</h1>
@@ -103,7 +103,7 @@
 
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/Gygaz.jpg" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Gygaz.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Gygaz</h1>
@@ -112,10 +112,11 @@
                                 </p>
                             </div>
                         </div>
+                        
 
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/vogtere.jpg" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Havefruedronningen.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Havets Vogtere</h1>
@@ -127,9 +128,9 @@
                     </div>
 
                     <div class="characters-row character-portal">
-                        <div class="character">
+                        <div class="big-character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/portal.jpg" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Portal-drago.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Portalerne</h1>

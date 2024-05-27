@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
+    <!-- <?php bloginfo("name") ?> -->
+    <!-- <link rel="shortcut icon" type="image/jpg" href="/favicon.png"/> -->
 </head>
 <body>
-    <header id="home">
+    <header>
         <nav>
             <a href="<?php echo get_permalink(get_page_by_path("frontpage")) ?>">
                 <div class="logo">

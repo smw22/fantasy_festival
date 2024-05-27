@@ -156,7 +156,7 @@ span{
     position: absolute;
     width: 100%;
     top: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 .portal-background-image{
@@ -279,14 +279,24 @@ span{
 /*Quest Page */
 
 .night-background{
-    position: absolute;
     width: 100%;
-    top: 0;
+    z-index: -1;
+    grid-area: 1 / 1;
 }
 
 .night-background-image{
     width: 100%;
-    z-index: -5;
+    object-fit: cover;
+    object-position: top center;
+    height: 7250px;
+
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
 }
 
 .container{
@@ -296,6 +306,11 @@ span{
     align-items: center;
     padding: 0 20px;
     margin-bottom: 100px;
+    margin-top: 200px;
+    grid-row-start: 1;
+    z-index: 1;
+    grid-area: 1 / 1;
+
 }
 
 h1{
@@ -317,12 +332,20 @@ h1{
     padding: 25px;
     border-radius: 16px;
     z-index: 99;
+    opacity: 0.9;
+    color: var(--light-color);
+    opacity: 0;
+    text-align: center;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.8s;
+    border-radius: 16px;
 }
 
 .information{
     display: flex;
     flex-direction: column;
-    gap: 300px;
+    gap: 80vh;
     width: 90%;
     padding-bottom: 30%;
 }
@@ -441,6 +464,10 @@ h1{
     margin: 15px 0 50px 0;
 }
 
+.second-section-text-description{
+    width: 20%;
+}
+
 .second-section-image{
     width: 100%;
     margin-top: 50px;
@@ -469,6 +496,10 @@ h1{
     margin-top: 30px;
 }
 
+.third-section-subtitle{
+    font-family: var(--font-family-title);
+}
+
 .third-section-text-row{
     margin: 50px 0;
     display: flex;
@@ -492,6 +523,12 @@ h1{
 
 .fourth-section-description{
     margin-bottom: 30px;
+}
+
+.fourth-section-description-list{
+    margin-top: 15px;
+    display: grid;
+    gap: 15px;
 }
 
 .fourth-section-column{
@@ -599,17 +636,25 @@ h1{
     gap: 50px;
 }
 
-
 .character-portal{
-    width: 40%;
+    width: 50%;
     margin: auto;
 }
 
 .characters-image-box{
-    width: auto;
+    width: 100%;
+    /* max-width: 300px; */
+    overflow: hidden; /* Prevent overflow */
 }
 
 .character{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.big-character{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,6 +662,8 @@ h1{
 
 .characters-image{
     width: 100%;
+    height: auto; /* Ensure images maintain their aspect ratio */
+    display: block; /* Prevent inline-block space issue */
 }
 
 .characters-text-box{
@@ -803,8 +850,10 @@ footer{
     .information-section{
         margin-top: 350px;
     }
+    .information{
+        gap: 400px;
+    }
 }
-
 
 /* media query 1250px */
 
@@ -813,6 +862,13 @@ footer{
     /* illustration responsive*/
     .information-section{
         margin-top: 100px;
+    }
+    .night-background-image{
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+        height: 5000px;
+    
     }
     /*first section responsive*/
     .practical-info-first-section{
@@ -828,20 +884,6 @@ footer{
         width: 100%;
     }
 
-    /* characters responsive*/
-    .characters-row{
-        flex-direction: column;
-        gap: 0;
-    }
-    .character-portal{
-        width: 100%
-    }
-    .characters-title{
-        font-size: 20px;
-    }
-    .story-title-box{
-        font-size: 25px;
-    }
 }
 
 /* media query 1000px */
@@ -910,6 +952,23 @@ footer{
         font-size: 12px;
         width: 60%;
     }
+    /* characters responsive*/
+    .characters-row{
+        flex-direction: column;
+        gap: 0;
+    }
+    .character-portal{
+        width: 100%
+    }
+    .characters-title{
+        font-size: 20px;
+    }
+    .story-title-box{
+        font-size: 25px;
+    }
+    .character{
+        width: 100%;
+    }
 }
 
 /* phone version */
@@ -959,6 +1018,11 @@ footer{
         width: 80%;
     }
 
+    /*Quest page */
+    .information-text-box{
+        width: 75%
+    }
+
     /*practical info*/
 
     .practical-info-title{
@@ -966,7 +1030,11 @@ footer{
     }
     
     .second-section-text-row{
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .second-section-text-description{
+        width: 100%;
     }
     
     .practical-info-fourth-section{
