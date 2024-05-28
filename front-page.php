@@ -2,13 +2,18 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
 
+            <?php
+                $portal_image = get_field("portal-background");
+                $program_image = get_field("program");
+            ?>
+
             <div class="temporal-blue-header-background">
                 
             </div>
             
             
             <div class="portal-backgroud">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/portal-website.webp" alt="" class="portal-background-image">
+                    <img src="<?php echo $portal_image["url"] ?>" alt="" class="portal-background-image">
             </div>
 
             <div class="home-container">
@@ -87,7 +92,7 @@
             
             <div class="program-image-box">
                 <h1 class="information-title">PROGRAM </h1>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/program-website.webp" alt="" class="program-image">
+                <img src="<?php echo $program_image["url"] ?>" alt="" class="program-image">
             </div>
 
         <?php endwhile; ?>

@@ -15,3 +15,9 @@ function fantasy_festival_add_defer_attribute($tag, $handle, $src) {
     return $tag;
 }
 add_filter('script_loader_tag', 'fantasy_festival_add_defer_attribute', 10, 3);
+
+function hotel_disable_gutenberg() {
+    remove_post_type_support("page", "editor");
+    remove_post_type_support("post", "editor");
+}
+add_action("init", "hotel_disable_gutenberg");

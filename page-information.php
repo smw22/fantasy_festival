@@ -1,6 +1,43 @@
 <?php get_header() ?>
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
+            <?php
+                $venues_image = get_field("venues-image");
+                $venues_welcome_text = get_field("venues_welcome_text");
+                $venues_first_title = get_field("venues-first-title");
+                $venues_second_title = get_field("venues-second-title");
+                $venues_third_title = get_field("venues-third-title");
+                $venues_fourth_title = get_field("venues-fourth-title");
+                $venues_fifth_title = get_field("venues-fifth-title");
+                $venues_sixth_title = get_field("venues-sixth-title");
+                $venues_seventh_title = get_field("venues-seventh-title");
+                $venues_eight_title = get_field("venues-eight-title");
+                $venues_first_description = get_field("venues-first-description");
+                $venues_second_description = get_field("venues-second-description");
+                $venues_third_description = get_field("venues-third-description");
+                $venues_fourth_description = get_field("venues-fourth-description");
+                $venues_fifth_description = get_field("venues-fifth-description");
+                $venues_sixth_description = get_field("venues-sixth-description");
+                $venues_seventh_description = get_field("venues-seventh-description");
+                $venues_eight_description = get_field("venues-eight-description");
+
+                $day_quest_first_description = get_field("day-quest-first-description");
+                $day_quest_second_description = get_field("day-quest-second-description");
+                $night_quest_first_description = get_field("night-quest-first-description");
+                $night_quest_second_description = get_field("night-quest-second-description");
+                $day_quest_place = get_field("day-quest-place");
+                $day_quest_date = get_field("day-quest-date");
+                $day_quest_time = get_field("day-quest-time");
+                $day_quest_level = get_field("day-quest-level");
+                $night_quest_place = get_field("night-quest-place");
+                $night_quest_date = get_field("night-quest-date");
+                $night_quest_time = get_field("night-quest-time");
+                $night_quest_level = get_field("night-quest-level");
+                $day_quest_image = get_field("day-quest-image");
+                $night_quest_image = get_field("night-quest-image");
+                
+            ?>
+
             <div class="background-image-pratical-information">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/bog-cover-cutted.jpg" alt="" class="book-cover-image">
             </div>
@@ -12,7 +49,7 @@
             <div class="practical-info-first-section">
 
                 <div class="first-section-image-box">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/Venues.jpeg" alt="" class="first-section-image">
+                    <img src="<?php echo $venues_image["url"] ?>" alt="" class="first-section-image">
                 </div>
 
                 <div class="first-section-text-box">
@@ -21,47 +58,45 @@
                     </div>
                     <div class="first-section-text">
                         <p>
-                            Velkommen til Fantasy Quest Festival, hvor vi bringer magi og eventyr til live! Udover spændende aktiviteter og begivenheder tilbyder vores festival en række unikke boder, hvor du kan nyde lækre retter, forfriskende cocktails og købe eventyrlige souvenirs. Udforsk de forskellige boder nedenfor og lad dig fortrylle.
+                            <?php echo $venues_welcome_text; ?>
                         </p>
                         <p>
-                            <strong>1. Dragegrillen</strong><br>
-                            Dragegrillen er stedet, hvor du kan smage lækre, grillstegte retter inspireret af festivalens drage-tema. Vores kokke bruger hemmelige krydderiblandinger for at skabe en uforglemmelig smagsoplevelse.
-                        </p>
+                            <strong><?php echo $venues_first_title; ?></strong><br>
+                                <?php echo $venues_first_description; ?>
+                            </p>
                         <p>
-                            <strong>2. Alkemistens Eliksirer</strong><br>
-                            Besøg Alkemistens Eliksirer for at smage magiske cocktails og drikkevarer. Hver drink er en unik blanding af ingredienser, der får dig til at føle dig som en ægte eventyrer.
-                        </p>
+                            <strong><?php echo $venues_second_title; ?></strong><br>
+                                <?php echo $venues_second_description; ?>
+                            </p>
                         <p>
-                            <strong>3. Eventyrernes Handelsplads</strong><br>
-                            Eventyrernes Handelsplads er fyldt med boder, der sælger alt, hvad en eventyrer måtte ønske sig. Fra håndlavede smykker til magiske artefakter, her finder du den perfekte souvenir til at mindes din tid på Fantasy Quest Festival. <br>
+                            <strong><?php echo $venues_third_title; ?></strong><br>
+                            <?php echo $venues_third_description; ?> <br>
                                 - Håndlavede smykker og amuletter <br>
                                 - Magiske bøger og pergamenter <br>
                                 - Kostumer og eventyrrekvisitter <br>
                                 - Souvenirs <br>
                         </p>
                         <p>
-                            <strong>4. Elverkøkkenet</strong><br>
-                            Elverkøkkenet tilbyder en række lette og sunde retter, inspireret af elvernes egen kost. Her kan du nyde friske salater, smagfulde sandwiches og magiske smoothies.
+                            <strong><?php echo $venues_fourth_title; ?></strong><br>
+                            <?php echo $venues_fourth_description; ?>
                         </p>
                         <p>
-                            <strong>5. Kæmpernes Kødgryder</strong><br>
-                            Hos Kæmpernes Kødgryder finder du solide og mættende måltider, perfekte til at genopbygge energien efter en lang dag med eventyr. Nyd rustikke retter tilberedt med kæmpeglæde.
+                            <strong><?php echo $venues_fifth_title; ?></strong><br>
+                            <?php echo $venues_fifth_description; ?>
                         </p>
                         <p>
-                            <strong>6.  Gnomens Gaver</strong><br>
-                            Gnomens Gaver byder på unikke og håndlavede produkter fra dygtige kunsthåndværkere. Her kan du finde alt fra trælegetøj til kunstværker, perfekte som gaver eller souvenirs.
+                            <strong><?php echo $venues_sixth_title; ?></strong><br>
+                            <?php echo $venues_sixth_description; ?>
 
                         </p>
                         <p>
-                            <strong>7.  Feens Søde Fristelser</strong><br>
-                            Besøg Feens Søde Fristelser for at tilfredsstille din søde tand med en række lækre desserter og snacks. Fra honningkager til eventyrlige cupcakes, her er noget for enhver smag.
+                            <strong><?php echo $venues_seventh_title; ?></strong><br>
+                            <?php echo $venues_seventh_description; ?>
 
                         </p>
                         <p>
-                            <strong>8. Troldens Taverna</strong><br>
-                            Troldens Taverna tilbyder en hyggelig atmosfære, hvor du kan slappe af med et glas eventyrlig øl eller mjød. Perfekt til at hvile fødderne og dele historier med andre eventyrere. <br>
-                                                    
-                            Vi glæder os til at byde dig velkommen til Fantasy Quest Festival, hvor eventyret venter ved hver bod!
+                            <strong><?php echo $venues_eight_title; ?></strong><br>
+                            <?php echo $venues_eight_description; ?>
 
                         </p>
                     </div>
@@ -77,7 +112,8 @@
                     </div>
 
                     <div class="second-section-text">
-                        <p>Vi ser frem til at byde dig velkommen til Fantasy Quest Festival i Esbjerg! For at gøre din rejse så let som muligt, har vi her samlet information om parkeringsmuligheder og offentlig transport i byen.
+                        <p>
+                            Vi ser frem til at byde dig velkommen til Fantasy Quest Festival i Esbjerg! For at gøre din rejse så let som muligt, har vi her samlet information om parkeringsmuligheder og offentlig transport i byen.
                         </p>
                         <p>
                             <strong>Parkeringsmuligheder</strong><br>
@@ -236,24 +272,24 @@
                         <h1>Dag Quest</h1>
                     </div>
                     <p class="fourth-section-undertitle">
-                        En dag trak skyerne sig sammen over havet mod vest, og der blev unaturligt mørkt. Lyn flængede himlen. Man kunne se en stor, bevinget skabning på himlen. De fire statuer rejste sig op, vogterne var blevet vækket, de gjorde sig klar og råbte. Råbene kunne høres over hele landet, på tværs af portaler til andre verdener. ”Der er brug for helte i Esbjerg!”, råbte de. Det er tid til, at heltene samles. Det er tid til, at ondskaben skal bekæmpes. Det er tid til, at portalerne lukkes. Det er tid til Fantasy Quest Esbjerg - er du klar?
+                        <?php echo $day_quest_first_description; ?>
                     </p>
                     <div class="fourth-section-description">
                         <p>
-                            Familieudgaven af Fantasy Quest Esbjerg er et oplevelsesløb for hele familien, med tryk på oplevelse. For det er ikke et klassisk løb. Det handler om at leve sig ind i en anden verden, en magisk historie, hvor I sammen er på en ”quest” – en mission, en opgave, en jagt. Her møder I magiske væsner, der stiller jer nogle opgaver og udfordringer undervejs mod målet, som I skal løse sammen for at gennemføre Questen. Sværhedsgraden er sænket, så børnene kan være med til at løse opgaverne. Men tag ikke fejl, der er brug for alle gode kræfter og samarbejdsevner, hvis I skal være med til at redde Esbjerg. Som en ekstra bonus kan I møde YouTuberen Lakserytteren undervejs i Questen rundt i Esbjergs gader.
+                            <?php echo $day_quest_second_description; ?>
                         </p>
                         <div class="fourth-section-description-list">
-                            <p><strong>Hvor:</strong> Torvet Esbjerg <br></p>
+                            <p><strong>Hvor:</strong> <?php echo $day_quest_place; ?> <br></p>
 
-                            <p><strong>Hvornår:</strong> 14. september 2024 <br></p>
+                            <p><strong>Hvornår:</strong> <?php echo $day_quest_date; ?>  <br></p>
 
-                            <p><strong>Tidspunkt:</strong> kl. 10.00-14.30 <br></p>
+                            <p><strong>Tidspunkt:</strong> <?php echo $day_quest_time; ?>  <br></p>
 
-                            <p><strong>Niveau:</strong> Børnevenligt <br></p>
+                            <p><strong>Niveau:</strong> <?php echo $day_quest_level; ?>  <br></p>
                         </div>
                     </div>
                     <div class="fourth-section-image-box">  
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/quest-img2.jpg" alt="" class="fourth-section-image">
+                        <img src="<?php echo $day_quest_image["url"] ?>" alt="" class="fourth-section-image">
                     </div>
                 </div>
 
@@ -262,23 +298,24 @@
                     <h1>Aften Quest</h1>
                     </div>
                     <p class="fourth-section-undertitle">
-                        En dag trak skyerne sig sammen over havet mod vest, og der blev unaturligt mørkt. Lyn flængede himlen. Man kunne se en stor, bevinget skabning på himlen. De fire statuer rejste sig op, vogterne var blevet vækket, de gjorde sig klar og råbte. Råbene kunne høres over hele landet, på tværs af portaler til andre verdener. ”Der er brug for helte i Esbjerg!”, råbte de. Det er tid til, at heltene samles. Det er tid til, at ondskaben skal bekæmpes. Det er tid til, at portalerne lukkes. Det er tid til Fantasy Quest Esbjerg - er du klar?                     
+                        <?php echo $night_quest_first_description; ?>
                     </p>
                     <div class="fourth-section-description">
                         <p>
-                            Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. Nu skal der virkelig tænkes kreativt og løses opgaver, der kræver både mod, samarbejde og snilde for at I kan gennemføre questen og redde Esbjerg. Er du vild med at løse gåder og knække koder, så må du ikke snyde dig selv for denne ultimative oplevelse. Vi sender dig og vennerne ud på jeres ultimative eventyr i Esbjergs gader og stræder. Her vil I blive nødt til at samarbejde og udtænke nye løsninger for at gennemføre AftenQuesten.                    </p>
+                        <?php echo $day_quest_second_description; ?>
+                        </p>
                         <div class="fourth-section-description-list">
-                            <p><strong>Hvor:</strong> Torvet Esbjerg <br></p>
+                            <p><strong>Hvor:</strong> <?php echo $night_quest_place; ?>  <br></p>
 
-                            <p><strong>Hvornår:</strong> 14. september 2024 <br></p>
+                            <p><strong>Hvornår:</strong> <?php echo $night_quest_date; ?>  <br></p>
 
-                            <p><strong>Tidspunkt:</strong> kl. 18.00-22.30 <br></p>
+                            <p><strong>Tidspunkt:</strong> <?php echo $night_quest_time; ?> <br></p>
 
-                            <p><strong>Niveau:</strong> 18+ år <br></p>
+                            <p><strong>Niveau:</strong> <?php echo $night_quest_level; ?> <br></p>
                         </div>
                     </div>
                     <div class="fourth-section-image-box">  
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/quest-img1.jpg" alt="" class="fourth-section-image">
+                        <img src="<?php echo $night_quest_image["url"] ?>" alt="" class="fourth-section-image">
                     </div>
                 </div>
             </div>
