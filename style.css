@@ -56,6 +56,35 @@ nav ul li a{
     font-family: var(--font-family-title);
 }
 
+.nav-menu{
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+
+.nav-menu:hover,
+.nav-menu:focus{
+    color: var(--orange-color);
+}
+
+.nav-menu::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--blue-color);
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    opacity:0;
+    transition: all 0.25s;
+    pointer-events: none;
+}
+
+.nav-menu:hover::after,
+.nav-menu:focus::after{
+    opacity:1;
+}
+
 .logo{
     width: 400px;
     align-items: center;
@@ -131,6 +160,11 @@ span{
 .off-screen-menu-link{
     color: var(--light-color);
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.off-screen-menu-link:hover{
+    color: var(--blue-color);
 }
 
 .responsive-menu{
@@ -183,7 +217,12 @@ span{
     font-size: 20px;
     border-radius: 16px;
     transform: translateY(-50px);
-    /* z-index: 1; */
+    transition: 0.3s all ease;
+}
+
+.quest-buttons:hover{
+    background-color: var(--orange-color);
+    color: var(--dark-color);
 }
 
 .quest-link{
@@ -805,8 +844,16 @@ input[type=submit]:hover {
     padding-left: 10px;
 }
 
-.link {
+.link{
     color: var(--light-color);
+}
+
+.link > a{
+    transition: all 0.3s ease;
+}
+
+.link > a:hover{
+    color: var(--dark-color);
 }
 
 .link a {

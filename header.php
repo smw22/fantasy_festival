@@ -12,7 +12,7 @@
         <nav>
             <a href="<?php echo get_permalink(get_page_by_path("frontpage")) ?>">
                 <div class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo-website.png" alt="" class="logo-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Primære-logo.png" alt="" class="logo-image">
                 </div>
             </a>
             <ul>
