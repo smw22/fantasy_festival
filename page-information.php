@@ -3,7 +3,7 @@
         <?php while(have_posts()): the_post(); ?>
             <?php
                 $venues_image = get_field("venues-image");
-                $venues_welcome_text = get_field("venues_welcome_text");
+                $venues_welcome_text = get_field("venues-welcome-text");
                 $venues_first_title = get_field("venues-first-title");
                 $venues_second_title = get_field("venues-second-title");
                 $venues_third_title = get_field("venues-third-title");
@@ -302,7 +302,7 @@
                     </p>
                     <div class="fourth-section-description">
                         <p>
-                        <?php echo $day_quest_second_description; ?>
+                        <?php echo $night_quest_second_description; ?>
                         </p>
                         <div class="fourth-section-description-list">
                             <p><strong>Hvor:</strong> <?php echo $night_quest_place; ?>  <br></p>
