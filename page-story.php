@@ -91,7 +91,7 @@
                     <div class="characters-row">
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Vogtere.png" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Havefruedronningen.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Havfruedronningen</h1>
@@ -116,7 +116,7 @@
 
                         <div class="character">
                             <div class="characters-image-box">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Havefruedronningen.png" alt="" class="characters-image">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/png/Vogtere.png" alt="" class="characters-image">
                             </div>
                             <div class="characters-text-box">
                                 <h1 class="characters-text-title">Havets Vogtere</h1>

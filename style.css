@@ -173,17 +173,6 @@ span{
 
 /* Header */
 
-/* Temporal Header background */
-.temporal-blue-header-background{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 110px;
-    background-color: #172737;
-    z-index: -1;
-    opacity: 0.67;
-}
-
 /* Home Page */
 
 .portal-backgroud{
@@ -323,9 +312,31 @@ span{
 
 /*Quest Page */
 
+/* Temporal Header background */
+.temporal-blue-header-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background-color: var(--dark-color);
+    z-index: -1;
+    opacity: 0.8;
+    filter: blur(5px)
+}
+
+.blue-header-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background-color: var(--dark-color);
+    z-index: -1;
+    opacity: 0.9;
+}
+
 .night-background{
     width: 100%;
-    z-index: -1;
+    z-index: -2;
     grid-area: 1 / 1;
     display: flex;
 }

@@ -60,7 +60,7 @@
                         <div class="information-section-item-icon">
                         <svg class="homepage-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M29 14a1 1 0 0 0 1-1V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v5a1 1 0 0 0 1 1a2 2 0 0 1 0 4a1 1 0 0 0-1 1v5a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1a2 2 0 0 1 0-4m-1 5.87V24h-7v-3h-2v3H4v-4.13a4 4 0 0 0 0-7.74V8h15v3h2V8h7v4.13a4 4 0 0 0 0 7.74"/><path fill="currentColor" d="M19 13h2v6h-2z"/></svg>
                         </div>
-                        <p class="information-section-item-title">Køb biletter</p>
+                        <p class="information-section-item-title">Køb billetter</p>
                     </div>
                     </a>
 
@@ -93,7 +93,7 @@
         <?php endwhile; ?>
     <?php endif; ?>
 <?php 
-if(is_page(7)) {
+if(is_page(8)) {
    get_footer('frontpage');
 } else {
    get_footer();
