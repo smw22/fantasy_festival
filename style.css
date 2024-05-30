@@ -31,6 +31,8 @@ body{
     font-family: var(--font-family-body-text);
 }
 
+/*header*/
+
 header{
     padding: 10px 20px;
 }
@@ -96,6 +98,8 @@ nav ul li a{
     height: auto;
 }
 
+/*hamburger menu */
+
 .ham-menu{
     display: flex;
     flex-direction: column;
@@ -111,7 +115,6 @@ span{
     border-radius: 25px;
     background-color: var(--light-color);
     transition: all 0.3s;
-    /* color: var(--light-color); */
 }
 
 .ham-menu-first-span.active{
@@ -171,7 +174,21 @@ span{
     display: none;
 }
 
-/* Header */
+/*hamburger menu */
+
+/* Header background */
+.temporal-blue-header-background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background-color: var(--dark-color);
+    z-index: -1;
+    opacity: 0.8;
+    filter: blur(5px)
+}
+
+/* Header slut*/
 
 /* Home Page */
 
@@ -312,23 +329,12 @@ span{
 
 /*Quest Page */
 
-/* Temporal Header background */
-.temporal-blue-header-background{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 110px;
-    background-color: var(--dark-color);
-    z-index: -1;
-    opacity: 0.8;
-    filter: blur(5px)
-}
-
+/* Header background for quest side*/
 .blue-header-background{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 110px;
+    height: 106px;
     background-color: var(--dark-color);
     z-index: -1;
     opacity: 0.9;
@@ -353,6 +359,10 @@ span{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     place-content: center;
+    /* wrapper skulle været på toppen men kunne ikke lykkedes */
+
+    /* position: absolute;
+    top: 0; */
 }
 
 .container{
@@ -431,6 +441,9 @@ h1{
 .information-text-box.even{
     align-self: flex-end;
 }
+
+/* Quest page slut */
+
 
 
 /* Practical Information page */
@@ -612,6 +625,8 @@ h1{
     margin-top: 30px;
 }
 
+/*Practical info slut */
+
 
 /*story page */
 
@@ -790,9 +805,10 @@ input[type=submit]:hover {
     background-color: #d24d00;
 }
 
+/*story page slut*/
+
 
 /* footer */
-
 
 
 .footer-container {
@@ -897,7 +913,8 @@ input[type=submit]:hover {
     padding: 0;
 }
 
-/* Different footer colours in different pages */
+/* Forskellige farver på forskellige sider */
+
 footer{
     background-color: var(--dark-color);
 }
@@ -912,7 +929,7 @@ footer{
 
 
 
-/* media query 1700px for illustration*/
+/* media query 1700px for forsiden illustration*/
 @media only screen and (max-width: 1250px){
     .information-section{
         margin-top: 350px;
@@ -922,8 +939,9 @@ footer{
     }
 }
 
-/* media query 1250px */
 
+
+/* media query 1250px */
 
 @media only screen and (max-width: 1250px){
     /* illustration responsive*/

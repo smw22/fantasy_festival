@@ -8,7 +8,7 @@ function fantasy_festival_load_styles_and_scripts() {
 add_action("wp_enqueue_scripts", "fantasy_festival_load_styles_and_scripts");
 
 function fantasy_festival_add_defer_attribute($tag, $handle, $src) {
-    // Add defer attribute to the script with handle 'script'
+    // Tilføj defer-attribut til scriptet med handle 'script'
     if ($handle === 'script') {
         return '<script src="' . esc_url($src) . '" defer></script>';
     }
@@ -16,8 +16,8 @@ function fantasy_festival_add_defer_attribute($tag, $handle, $src) {
 }
 add_filter('script_loader_tag', 'fantasy_festival_add_defer_attribute', 10, 3);
 
-function hotel_disable_gutenberg() {
+function fantasy_disable_gutenberg() {
     remove_post_type_support("page", "editor");
     remove_post_type_support("post", "editor");
 }
-add_action("init", "hotel_disable_gutenberg");
+add_action("init", "fantasy_disable_gutenberg");

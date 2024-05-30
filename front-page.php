@@ -17,13 +17,17 @@
             </div>
 
             <div class="home-container">
+                <a class="quest-link" href="#">
                 <div class="quest-buttons day-quest-button">
-                    <a class="quest-link" href="#">DAG QUEST</a>
+                    DAG QUEST
                 </div>
+                </a>
 
+                <a class="quest-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">
                 <div class="quest-buttons night-quest-button">
-                    <a class="quest-link" href="<?php echo get_permalink(get_page_by_path("quest")) ?>">AFTEN QUEST</a>
+                    AFTEN QUEST
                 </div>
+                </a>
                 
             </div>
 

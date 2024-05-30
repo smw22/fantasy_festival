@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
     <!-- <?php bloginfo("name") ?> -->
-    <!-- <link rel="shortcut icon" type="image/jpg" href="/favicon.png"/> -->
 </head>
 <body>
     <header>
@@ -27,8 +26,9 @@
 
             </ul>
         </nav>
+        <!-- Menu når man trykker på ham-menu, tjek css  linje 133-->
         <a href="#">
-            <div class="off-screen-menu">
+            <div class="off-screen-menu"> 
                 <ul>
                     <li class="responsive-menu"><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" class="off-screen-menu-link">Køb biletter</a></li>
                     <li class="responsive-menu"><a href="<?php echo get_permalink(get_page_by_path("story")) ?>" class="off-screen-menu-link">Historien</a></li>

@@ -1,9 +1,10 @@
 </main>
+    <!-- footer har forskellige versioner på forskellige sider(skifter farver). Derfor er der footer-quest.php og footer-frontpage.php -->
     <footer class="footer-quest">
         <div class="footer-ilustration-box">
             <div class="footer-ilustration">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/footer-orange.png" alt="" class="footer-ilustration-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/footer-responsive-orange.png" alt="" class="footer-ilustration-image-responsive">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/footerorange.png" alt="" class="footer-ilustration-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/footer-telefon-orange.png" alt="" class="footer-ilustration-image-responsive">
             </div>
         </div>
         <div class="footer-container">
